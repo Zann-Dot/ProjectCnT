@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <style>
+        body{
+    font-family: speedee;
+    margin: 0;
+    
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url(backgroundblur.png);
+    backdrop-filter: blur(18px);
+    
+}
+
+.login-container {
+    background-color: #FBF6F0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form, #signupForm {
+    display: flex;
+    flex-direction: column;
+    
+}
+form h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    color: #2b2b2b;
+}
+form p {
+    margin: 0 0 60px 0;
+    text-align: center;
+    color: #817854;
+    font-family: 'Rubik', sans-serif;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fcf9f6;
+    height: 20px;
+    margin: 0 0 10px 0;
+}
+
+button {
+    background-color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: speedee;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: rgb(231, 231, 231);
+}
+#loginForm {
+    width: 300px;
+}
+#loginForm label {
+    color: #676767;
+    font-family: 'Rubik', sans-serif;
+    font-weight: light;
+    margin: 0 0 10px 0;
+}
+
+#errorMsg {
+    color: red;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.signup-link a {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30rem;
+}
+#signupForm label {
+    margin-bottom: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+
+<div class="login-container">
+    <form id="loginForm">
+        <h2>Hi there!</h2>
+        <p>Welcome to Crisp n' Twist</p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="validateLogin()">Login</button>
+        <p id="errorMsg"></p>
+    </form>
+
+    <div class="signup-link">
+        <p>Don't have an account? <a href="#" onclick="openSignUp()">Sign Up</a></p>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignUp()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="newUsername">Enter a username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+
+                <label for="newPassword">Choose Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+
+                <button type="button" onclick="submitSignUp()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validateLogin() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var errorMsg = document.getElementById("errorMsg");
+
+    // Add your authentication logic here (for simplicity, this example has a hardcoded username and password)
+    if (username === "demo" && password === "password") {
+        // Redirect to a welcome page or perform other actions
+        alert("Login successful!");
+    } else {
+        errorMsg.innerText = "Invalid username or password";
+    }
+    
+}
+
+function openSignUp() {
+    document.getElementById("signupModal").style.display = "block";
+}
+
+function closeSignUp() {
+    document.getElementById("signupModal").style.display = "none";
+}
+
+function submitSignUp() {
+    var newUsername = document.getElementById("newUsername").value;
+    var newPassword = document.getElementById("newPassword").value;
+    // Add your sign-up logic here (for simplicity, this example does not perform any actual sign-up)
+    alert("Sign Up successful!");
+    window.location.href = "CNT 1st.html";
+}
+
+</script>
+</body>
+</html>
