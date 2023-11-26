@@ -1,3 +1,14 @@
+// document.onreadystatechange = function () {
+//     var loaderWrapper = document.getElementById('loader-wrapper');
+
+//     if (document.readyState === 'complete') {
+//         // Hide the loader when the page is fully loaded
+//         loaderWrapper.style.display = 'none';
+//     } else {
+//         // Show the loader while the page is loading
+//         loaderWrapper.style.display = 'flex';
+//     }
+// };
 document.onreadystatechange = function () {
     var loaderWrapper = document.getElementById('loader-wrapper');
 
