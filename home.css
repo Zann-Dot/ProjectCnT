@@ -336,16 +336,113 @@ div .mySlides img{
     gap: 30px;
 }
 .deals{
-    width: 267px;
-    height: 786px;
+    width: 230px;
+    height: 550px;
     border-radius: 7px;
     background: #FFF;
+    color: #8D8D8D;
     box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.08);
     margin-top: 13px;
-    background-image: url(Free\ Junk\ Food\ Illustration-PNG.png);
-    background-size: 50%;
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.burgerMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(burger\ menu.jpg);
+    background-size: cover;
+}
+.deals h3 {
+    width: 130px;
+    position: relative;
+    left: 50px;
+    margin: 13px 0 10px 13px;
+    font-family: speedee, 'Fira', sans-serif;
+    font-size: 14px;
+}
+.coffeeAndBeverages h3 {
+    width: 130px;
+    position: relative;
+    left: 50px;
+    margin: 5px 0 10px 13px;
+    font-family: speedee, 'Fira', sans-serif;
+    font-size: 14px;
+}
+.pizzaMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(pizza\ menu.png);
+    background-size: cover;
+}
+
+.pastaMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(pasta\ menu.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50%;
+}
+.sandwichMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(sandwich\ menu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.friesAndSidesMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(fries\ and\ sides\ menu.jpg);
+    background-size: 66%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.japaneseMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(japanese\ menu.jpg);
+    background-size: cover;
+}
+.mealForOneMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(meal\ menu2.png);
+    background-size: cover;
+}
+.coffeeAndBeverages {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(beverage\ menu.jpg);
+    background-size: cover;
+}
+.Desserts {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(desert\ menu.png);
+    background-size: cover;
 }
 
 .placards {
@@ -364,9 +461,10 @@ div .mySlides img{
     flex-shrink: 0;
     border-radius: 10px;
     box-shadow: 0px 4px 50.3px 0px rgba(0, 0, 0, 0.02);
+    background-color: white;
 }
-.placards .box1 {
-    background-image: url(placard\ 1.jpg);
+/* .placards .box1 {
+    background-image: url(\ 1.jpg);
     background-size: cover;
 }
 .placards .box2 {
@@ -401,10 +499,27 @@ div .mySlides img{
 .placards .box9 {
     background-image: url(placard\ 8.jpg);
     background-size: cover;
+} */
+
+.placards .addToCartButton {
+    width: 285px;
+    height: 41px;
+    border-radius: 7px;
+    background: #FBB900;
+    font-family: speedee, 'Fira', sans-serif;
+    position: relative;
+    top: 288px;
+    left: 28.5px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 23px;
 }
-.placards {
-    display: none;
+.addToCartButton img {
+    margin: 0 0 1px 5px;
+    height: 14px;
 }
+
+
 .open {
     height: 200px;
     width: 200px;
@@ -413,4 +528,106 @@ div .mySlides img{
 .position {
     position: relative;
     top: 96px;
+}
+.divider-ToMyCart {
+    width: 2px;
+    height: 130vh;
+    background: rgba(208, 193, 177, 0.44);
+    margin-top: 34px;
+    margin-left: 20px;
+}
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headings h5 {
+    color: #252525;
+    font-family: Speedee, 'Fira', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+    margin-top: 45px;
+}
+.headings h6 {
+        color: #D90108;
+    font-family: Speedee;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 10px;
+}
+.myCartArea .cartView{
+    width: 443px;
+    height: 500px;
+    flex-shrink: 0; 
+    border-radius: 15px;
+    background: #f4f4f4;
+    box-shadow: 0px 4px 50.3px 0px rgba(0, 0, 0, 0.10);
+    /* margin-top: 120px; */
+}
+.cartView video {
+    width: 289px;
+    height: 296px;
+    position: relative;
+    top: 50px;
+
+    
+}
+.cartView {
+    text-align: center;
+    color: #2B2B2B;
+    font-family: Speedee, 'Fira', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.cartView h3 {
+    font-size: 32px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    bottom: 25px;
+    
+}
+.cartView h4 {
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    bottom: 12px;
+}
+.viewCartButton {
+    display: none;
+    width: 413px;
+    height: 62px;   
+    border-radius: 19px;
+background: #FBB900;
+}
+.viewCartButton img {
+    height: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 200px;
+    background-color: #0C0C0C;
+    position: relative;
+    bottom: 0;
+    margin-top: 500px;
 }
