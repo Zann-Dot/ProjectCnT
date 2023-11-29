@@ -49,12 +49,16 @@ window.onclick = function(event) {
     });
 };
 
+
+
+
+
 //mobile icon colour swapping function
 let initialImageSources = {};
     let lastClickedDivId = null;
 
     function initializeInitialImageSources() {
-        document.querySelectorAll('.offer .mobileSwitchIcon').forEach(img => {
+        document.querySelectorAll('.merge .offer .mobileSwitchIcon').forEach(img => {
             const divId = img.parentElement.id;
             initialImageSources[divId] = img.src;
         });
@@ -79,9 +83,9 @@ let initialImageSources = {};
 
     document.body.addEventListener('mousedown', function (event) {
         // Check if the click is not on an image-div
-        if (!event.target.closest('.offer')) {
+        if (!event.target.closest('.merge .offer')) {
             // Reset all images back to their initial state
-            document.querySelectorAll('.offer .mobileSwitchIcon').forEach(img => {
+            document.querySelectorAll('.merge .offer .mobileSwitchIcon').forEach(img => {
                 const divId = img.parentElement.id;
                 img.src = initialImageSources[divId];
             });
@@ -154,37 +158,89 @@ function openRedeemPage() {
     }
 
 
-    function moreOpen1(){
-        window.location.href="openmore.html";
-    }
-    function moreOpen2(){
-        window.location.href="openmore2.html";
-    }
-    function moreOpen3(){
-        window.location.href="openmore3.html";
-    }
-    function moreOpen4(){
-        window.location.href="openmore4.html";
-    }
-    function moreOpen5(){
-        window.location.href="openmore5.html";
-    }
-    function moreOpen6(){
-        window.location.href="openmore6.html";
+   
+
+
+
+
+
+    var cart = [];
+
+    function addToCart(id, name, price) {
+        cart.push({ id: id, name: name, price: price });
+        updateCart();
     }
 
-    //add
-    document.addEventListener('DOMContentLoaded', function () {
-        var addItemButton = document.getElementsByClassName('addtocartButton');
-        var itemList = document.getElementById('itemList');
+    function updateCart() {
+        var cartItems = document.getElementById('cart-items');
+        var cartTotal = document.getElementById('cart-total');
+        var total = 0;
 
-        addItemButton.addEventListener('click', function () {
-            // Create a new list item element
-            var newItem = document.createElement('li');
-            newItem.className = 'item';
-            newItem.textContent = 'New Item';
+        // Clear previous items
+        cartItems.innerHTML = '';
 
-            // Append the new item to the list
-            itemList.appendChild(newItem);
+        // Update cart items
+        cart.forEach(function (item) {
+            var cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <span>${item.name}</span>
+                <span>$${item.price.toFixed(2)}</span>
+            `;
+            cartItems.appendChild(cartItem);
+
+            total += item.price;
         });
-    });
+
+        // Update total
+        cartTotal.textContent = 'Total: $' + total.toFixed(2);
+    }
+       
+
+
+    var cart = [];
+
+    function addToCart(id, name, price) {
+        cart.push({ id: id, name: name, price: price });
+        updateCart();
+    }
+
+    function removeFromCart(index) {
+        // Remove the item at the specified index from the cart array
+        cart.splice(index, 1);
+        updateCart();
+    }
+
+    function updateCart() {
+        var cartItems = document.getElementById('cart-items');
+        var cartTotal = document.getElementById('cart-total');
+        var total = 0;
+
+        // Clear previous items
+        cartItems.innerHTML = '';
+
+        // Update cart items
+        cart.forEach(function (item, index) {
+            var cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <span>${item.name}</span>
+                <span>$${item.price.toFixed(2)}</span>
+                <button class="btn" onclick="removeFromCart(${index})">Remove</button>
+            `;
+            cartItems.appendChild(cartItem);
+
+            total += item.price;
+        });
+
+        // Update total
+        cartTotal.textContent = 'Total: $' + total.toFixed(2);
+    }
+
+    function checkout() {
+        alert('Thank you for your order!');
+        // You can implement further actions like sending the order to a server/database
+        // and resetting the cart.
+        cart = [];
+        updateCart();
+    }

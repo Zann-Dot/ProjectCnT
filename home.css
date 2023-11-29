@@ -11,7 +11,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -25,9 +25,8 @@ body {
     height: auto ; /* Maintain the aspect ratio */
     color: #ffffff;
     position: absolute;
-    top: 13%;
-    left: 140px;
-    
+    top: 35%;
+    left: 33%;
 }
 
 .loader-section {
@@ -37,9 +36,9 @@ body {
     height: 5px; /* Set the desired height of the loading bar */
     width: 20px;
     background-color: #FBB900; /* Set the color of the loading bar */
-    position: relative;
-    top: 20%;
-    left: 10%;
+    position: absolute;
+    top: 60%;
+    left: 33%;
     
     z-index: 1;
     animation: loading 3s linear infinite; /* Adjust the animation duration as needed */
@@ -49,11 +48,8 @@ body {
     0% {
         width: 0%;
     }
-    50% {
-        width: 13%;
-    }
     100% {
-        width: 25%;
+        width: 41%;
     }
 }
 @media (width > 500px) and (width < 999px){
@@ -92,16 +88,28 @@ body {
         top: 30%;
         left: 40%;
     }
+    @keyframes loading {
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 13%;
+        }
+        100% {
+            width: 30%;
+        }
+    }
 }
 
 
 
 header {
-    background: #F2F2F2; 
+    /* background: #F2F2F2;  */
+    background: #ffffff;
     position: fixed;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16); ;
-    z-index: 2;
+    z-index: 10;
 }
 .mobileTopButtons {
     display: none;
@@ -125,12 +133,11 @@ nav {
 }
 #logo{
     width: 184px;
-    height: 107px;
-    background-image: url("CNT_LOGO.jpg");
-    background-size: cover;
-    position: relative;
-    bottom: 39px;   
-    
+    height: 70px;  
+    background-image: url("logo\ transparent.png");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .mobileTopButtons {
     display: none;
@@ -291,7 +298,7 @@ nav {
 .region_detector .dropdown button {
     background-color:white ;
     color: black;
-    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;
     padding: 0;
 } 
 .dropdown_region_icon {
@@ -317,6 +324,25 @@ nav {
 .dropdown_region_icon img {
     height: 5px;
 }
+
+.leftNavBarcontent {
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-left: 630px;
+}
+.leftNavBarcontent img {
+    height: 20px;
+}
+
+
+
 .user_id img {
     margin-right: 25px;
 }
@@ -338,8 +364,10 @@ nav {
     background: #252525;
 }
 div .mySlides img{
-    width: 100vw;
-
+    width: 100%;
+}
+.slideshow-container .mobileBanner {
+    display: none;
 }
 @media (width>800px) {
     div .mySlides img{
@@ -419,7 +447,7 @@ div .mySlides img{
 }
 .menu_searchbar button:hover {
     background: #be3232;
-    color: #e4e4e4;
+    color: #ffffff;
     font-size: 13px;
     transform: scale(1.1);
 }
@@ -438,6 +466,25 @@ div .mySlides img{
     position: relative;
     top: 3.4px;
 }
+.menu_searchbar .search-bar {
+    width: 353px;
+    height: 53px;
+    border-radius: 5px;
+    border: 0.5px solid #b6b6b6;
+    background: #FFF;
+    box-shadow: 0px 0px 19.8px -3px rgba(0, 0, 0, 0.08);
+    padding-left: 20px;
+    margin-left: 1070px;
+    font-size: 15px;
+}
+.menu_searchbar .searchIcon {
+    height: 28px;
+    position: relative;
+    right: 50px;
+    top: 8px;
+}
+
+
 .deals_and_placards {
     display: flex;
     gap: 30px;
@@ -450,7 +497,7 @@ div .mySlides img{
     color: #8D8D8D;
     box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.08);
     margin-top: 13px;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -709,16 +756,30 @@ div .mySlides img{
     bottom: 12px;
 }
 .viewCartButton {
-    display: inline-block;
-    width: 413px;
+    display: flex;
+    justify-content: space-between;
+    width: 443px;
     height: 62px;   
     border-radius: 19px;
-background: #FBB900;
+    background: #FBB900;
+    margin-top: 20px;
 }
 .viewCartButton img {
-    height: 42px;
+    height: 32px;
+    margin: 16px 0 0 20px;
 }
-
+.viewCartButton button {
+    border: none;
+    border-radius: 19px;
+    padding: 0 20px 0 0;
+    background-color: #FBB900;
+    color: #2B2B2B;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 @media (width < 800px) {
     #logo {
         display: none;
@@ -750,6 +811,9 @@ background: #FBB900;
         padding: 15px 15px 0 15px;
     }
     nav .offerButton {
+        display: none;
+    }
+    .leftNavBarcontent {
         display: none;
     }
     .region_detector {
@@ -805,6 +869,9 @@ background: #FBB900;
     div .mySlides img{
         display: none;
     }
+    .slideshow-container .mobileBanner {
+        display:block;
+    }
     .navbar {
         position: fixed;
         bottom: 0;
@@ -828,7 +895,7 @@ background: #FBB900;
         gap: 2px;
     }
     .navbar div section {
-        font-size: 13px;
+        font-size: 12px;
         font-family: 'Noto Sans', 'Fira Sans', 'Poppins',  sans-serif ;
         color: rgb(172, 172, 172);
     }
@@ -841,14 +908,19 @@ background: #FBB900;
          z-index: 0;
          
     }
-
+    .menu_searchbar .search-bar {
+        display: none;
+    }
+    .menu_searchbar .searchIcon {
+        display: none;
+    }
     footer {
         display: none;
     }
     .slideshow-container {
         background: #FBF6F0;
     }
-    .offer {
+    .merge .offer {
         width: 120px;
         height: 90px;
         border-radius: 10px;
@@ -860,15 +932,12 @@ background: #FBB900;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 17px;
        margin-bottom: 8px;
        box-shadow: 0 0 18px 0 rgb(0, 0, 0, 0.1);
     }
     .offer button {
-        width: 74px;
+        width: 0px;
         background-color: transparent;
         color: white;
         border: none;
@@ -876,7 +945,7 @@ background: #FBB900;
         font-size: 0px;
         margin: 0;
         /* padding-left: 15px; */
-        padding: 5px 10px 0 10px
+        padding: 0;
     }
    
     .merge .offer:focus {
@@ -890,7 +959,8 @@ background: #FBB900;
     .offer .mobileSwitchIcon {
         display: inline;
         height: 34px;
-        padding: 0 0 0 89px;
+        padding: 25px 0 0 0px;
+
     }
     .mobileTopButtons {
         width: 97%;
@@ -933,48 +1003,56 @@ background: #FBB900;
 }
 
 @media (width < 600px) {
-    .offer {
+    .merge .offer {
         height: 78px;
         width: 98px;
     }
+    .offer .mobileSwitchIcon {
+        padding: 20px 0 0 0px;
+    }
 }
 @media (width < 500px) {
-    .offer {
+    .merge .offer {
         height: 64px;
         width: 84px;
     }
+    .offer .mobileSwitchIcon {
+        height: 27px;
+        padding: 17px 0 0 0px;
+    }
+
 }
 @media (width < 440px) {
-    .offer {
+    .merge .offer {
         height: 54px;
         width: 70px;
     }
     .offer .mobileSwitchIcon {
         height: 27px;
-        padding: 0 0 0 66px;
+        padding: 13px 0 0 0px;
     }
     .offer button.dropbtn {
-        width: 50px;
-        padding:5px 0 0 0;
+        width: 0px;
+        padding: 0;
     }
 }
 @media (width < 390px) {
-    .offer {
+    .merge .offer {
         width: 65px;
     }
 }
 @media (width < 370px) {
-    .offer {
+    .merge .offer {
         width: 63px;
     }
 }
 @media (width < 360px) {
-    .offer {
+    .merge .offer {
         width: 60px;
     }
 }
 @media (width < 340px) {
-    .offer {
+    .merge .offer {
         width: 56px;
     }
 }
