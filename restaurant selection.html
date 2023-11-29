@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your Address</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+    font-family: speedee, 'Fira', 'Poppins', sans-serif;
+    margin: 0;
+    
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url(bg\ of\ select\ restaurent.png);
+    backdrop-filter: blur(28px) brightness(0.7);
+    
+    
+    
+    }
+        .containerTransition {
+            background-color: #f7f2ea;
+            height: 935px;
+            width: 101.5%;
+            border-radius: 30px;
+            position: fixed;
+            top: 850px;
+            transition: 0.3s linear;
+            animation:slide-top .4s both;
+            box-shadow: 0 0 30px 0 rgb(0, 0, 0, 0.3);
+            
+        }
+        @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-70%)}}
+        .topArea {
+            width: 100%;
+            height: 80px;
+            background-color: #fff;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .topArea h4{
+            margin: 0;
+            text-align: center;
+            padding-top: 0px;
+            font-size: 18px;
+        }
+        .topArea button {
+            background-color: white;
+            border: none;
+            width: 10%;
+            
+        }
+        /* .containerTransition:focus {
+            animation:slide-bottom .5s cubic-bezier(.445,.05,.55,.95) both;
+        } */
+        @keyframes slide-bottom {
+            0% {transform:translateY(0)}
+            100% {transform:translateY(100%)}
+        }
+        .topArea button img {
+            width: 40px;
+            height: 25px;
+            position: relative;
+            bottom: 9px;
+        }
+        .addressSelector {
+            padding: 30px 20px 0 20px;
+        }
+        .addressSelector h3{
+            font-size: 14px;
+        }
+        .addressSelector p {
+            font-family: 'Rubik', 'Poppins','Noto Sans', 'Fira', sans-serif;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+        .addressSelector pre {
+            font-size: 14px;
+            font-family: 'Rubik', 'Poppins','Noto Sans', 'Fira', sans-serif;
+            color: #999;
+            margin: 7px 0 10px 0;
+        }
+        .addressLane1 {
+            padding: 10px;
+        }
+        .addressLane2 {
+            padding: 10px;
+        }
+        .addressLane1 img {
+            height: 20px;
+            margin-left: 300px;
+            
+        }
+        
+        .addressLane1 #distance {
+            margin: 0 0 0 330px;
+            position: relative;
+            top: 20px;
+        }
+        .addressLane2 img {
+            height: 20px;
+            margin-left: 300px;
+            
+        }
+        .addressLane2 #distance {
+            margin: 0 0 0 330px;
+            position: relative;
+            top: 20px;
+        }
+        .addressLane1:hover {
+            background-color: #ffbe0d26;
+            border: 1px solid #ffbe0d;
+            border-radius: 8px;
+        }
+        .addressLane2:hover {
+            background-color: #ffbe0d26;
+            border: 1px solid #ffbe0d;
+            border-radius: 8px;
+        }
+        @media (width < 400px) {
+            .addressSelector {
+            padding: 30px 10px 0 10px;
+        }
+            .addressLane1 img {
+                margin-left: 255px;
+            }
+            .addressLane1 #distance {
+                margin-left: 280px;
+            }
+            .addressLane2 img{
+                margin-left: 255px;
+            }
+            .addressLane2 #distance {
+                margin-left: 280px;
+            }
+            .addressLane2 h3 {
+                margin: 0 0 14px 0;
+            }
+            .addressLane1 {
+                padding: 10px 10px 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="containerTransition">
+
+        <div class="topArea">
+            <button onclick="returnToHomePage()"><img src="minus.png" alt=""></button>
+            <h4>Store based on the selected address</h4>
+        </div>
+        <div class="addressSelector">
+            <div class="addressLane1">
+                <h3>Indore Bhawarkuan</h3>
+                <p>Hardcastle Restaurants Pvt Ltd, Crips N Twist Family Restaurants Pvt Ltd, Orange Business Park, Survey Nos.1618/1/2 and 1618/1/3, Bhawarkuan Main Road,Beside Rajnandini Hotel, Near Apple Hospital,Indore, , Bhawarkuan, Indore</p>
+                <pre><i class="fa-solid fa-circle fa-2xs" style="color: #c40e0e;"></i>  Open  |  10:00 am - 2:50 am</pre>
+                <p id="distance">210 m</p>
+                <img src="distance.png" alt="">
+            </div>
+            <div class="addressLane2">
+                <h3>Treasure Island</h3>
+                <p>Crisp N Twist Family Restaurant,Treasure Island, 11, Tukoganj, M.G Rd, Indore- 452001, , , M G Road, Indore</label></p>
+                <pre><i class="fa-solid fa-circle fa-2xs" style="color: #c40e0e;"></i>  Open  |  10:00 am - 11:50 pm</pre>
+                <p id="distance">4 km</p>
+                <img src="distance.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+   function returnToHomePage() {
+    window.location.href = "afterscanpage.html";
+   }
+</script>
+</html>
