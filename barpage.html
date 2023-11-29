@@ -53,12 +53,25 @@
                 max-width: 30%;
             }
         }
+        img:hover {
+            
+            animation:scale-up-center 0.3s both;
+            
+        }
+        /* .scale-up-center {
+            animation:scale-up-center .3s both
+        }
+         */
+        @keyframes scale-up-center{
+            0% {transform:scale(.95)}
+            100% {transform:scale(1)}
+        }
     </style>
 </head>
 <body>
     
     <div id="barcode-container">
-        <img id="barcode-image" src="io86-r_qrcode.png" alt="Barcode" onclick="pay()">
+        <img class="scale-up-center" id="barcode-image" src="io86-r_qrcode.png" alt="Barcode" onclick="pay()">
         
     </div>
     <!-- <img id="fries" src="spreaded fries.png" alt=""> -->

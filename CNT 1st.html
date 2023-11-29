@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="loader-wrapper">
-        
         <div class="loader-section">
             <video id="loader" autoplay loop muted>
             <source src="burger eye 4.mp4" type="video/mp4">
@@ -23,6 +24,7 @@
         </video></div>
         <div class="linear-loader"></div>
     </div>
+    
     <header>
         <!-- <h1>Crisp n'Twist</h1>
         <nav>
@@ -138,8 +140,18 @@
 
             <div class="menu_searchbar">
                 <h3>Our Menu</h3>
-                <button onclick="templatesVisibility()"><img src="🦆 icon _trending up_.svg" >Deals</button>
-        </div>
+                <button class="deals" id="loadButton" onclick="templatesVisibility()"><img src="🦆 icon _trending up_.svg" >Deals</button>
+                <button class="popular" id="loadButton" onclick="templatesVisibility()"><img src="popular icon.png" >Popular</button>
+                <button class="newLaunch" id="loadButton" onclick="templatesVisibility()"><img src="new-launch.svg" >New Launch</button>
+                <!-- <div id="loader-wrapper">
+                    <div class="loader-section">
+                        <video id="loader" autoplay loop muted>
+                        <source src="burger eye 4.mp4" type="video/mp4">
+                       
+                    </video></div>
+                    <div class="linear-loader"></div>
+                </div> -->
+            </div>
             
         <div class="deals_and_placards">
                 <div class="deals"></div>
