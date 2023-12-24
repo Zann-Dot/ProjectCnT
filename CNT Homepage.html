@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CNT Food Ordering</title>
+    <link rel="stylesheet" type="text/css" href="styleH.css">
+</head>
+<body>
+    <header>
+        <h1>CNT Food Ordering</h1>
+    </header>
+
+    <div class="menu">
+        <h2>Menu</h2>
+        <ul id="menu-list">
+            <li>
+                <div class="item">
+                    <img src="Pizza.jpg" alt="Pizza">
+                    <span class="item-name">Pizza</span>
+                    <span class="item-price">$10.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <img src="Burger.jpg" alt="Burger">
+                    <span class="item-name">Burger</span>
+                    <span class="item-price">$5.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </li>
+            <!-- Add more menu items here -->
+        </ul>
+    </div>
+
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added dynamically using JavaScript -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout">Checkout</button>
+    </div>
+
+    <script src="scriptH.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Softdrinks Details</title>
+</head>
+<style>
+    /* Apply common styles to header and footer */
+header, footer {
+    background-color: rgb(238, 152, 47);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Style star ratings */
+.rating {
+    margin: 10px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-ratings-css {
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ccc;
+}
+
+.star-ratings-css-top {
+    color: rgb(10, 105, 10);
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.star-ratings-css-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+}
+
+
+/* Style the h1 on food detail pages */
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+/* Style the "Add to Cart" button */
+.food-details-content button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.food-details-content button:hover {
+    background-color: #ff4500;
+}
+
+/* Style the food details container */
+.food-details-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the food image */
+.food-details-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Style food name */
+.food-details-content h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* Style food details (price, rating, cook time) */
+.food-details-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Soft drinks Details</h1>
+    </header>
+
+    <div class="food-details-content">
+        <img src="softdrinks.jpg" alt="Burger">
+        <h3>Soft drinks</h3>
+        <p>Price: $7.99</p>
+        <div class="rating">
+            <p>Rating: </p>
+            <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: 50%">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div class="star-ratings-css-bottom">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+        </div>
+        
+        <p>Cook Time: 15 minutes</p>
+        <!-- Add more food details here -->
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 CNT Food Ordering</p>
+    </footer>
+    <script>
+        function addToCart() {
+            // Redirect to the cart page when the "Add to Cart" button is clicked
+            window.location.href = "mycartpage.html";
+        }
+    </script>
+</body>
+</html>

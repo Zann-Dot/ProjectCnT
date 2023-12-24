@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu, .cart {
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+
+.menu ul, .cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu .item, .cart li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#checkout {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cart-total {
+    font-weight: bold;
+}
