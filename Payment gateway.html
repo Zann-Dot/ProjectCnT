@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#order-details, #cancellation-policy {
+    margin-bottom: 30px;
+}
+
+p.total {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Animation styles */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+#done-animation {
+    font-size: 36px;
+    color: green;
+    animation: bounce 2s ease-in-out;
+}
+
+
+#payment-methods, #online-payment-options, #cash-payment-text {
+    margin-bottom: 30px;
+}
+
+label {
+    margin-right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#payment-methods, #online-payment-options, #cash-payment-text {
+    margin-bottom: 30px;
+}
+
+label {
+    margin-right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"] {
+    width: 35%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Animation styles */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+#done-animation {
+    font-size: 36px;
+    color: green;
+    animation: bounce 2s ease-in-out;
+}
+
+
+  </style>
+</head>
+<body>
+    <h1>Payment Details</h1>
+
+    <div id="order-details">
+        <h2>Order Details</h2>
+        <p>Item Ordered: Pizza</p>
+        <p>Total Amount: $15.99</p>
+        <p>GST: $1.00</p>
+        <p>Restaurant Charges: $2.00</p>
+        <p class="total">Total to Pay: $18.99</p>
+    </div>
+
+    <h1>Payment Options</h1>
+
+    <div id="payment-methods">
+        <label for="online-payment">
+            <input type="radio" id="online-payment" name="payment-method" value="online-payment">
+            Online Payment
+        </label>
+
+        <label for="cash-payment">
+            <input type="radio" id="cash-payment" name="payment-method" value="cash-payment">
+            Cash Payment
+        </label>
+    </div>
+
+    <div id="online-payment-options">
+       
+   
+        <label for="upi">
+            <input type="radio" id="upi" name="online-option" value="upi">
+            UPI
+        </label>
+        
+    
+
+        <label for="cards">
+            <input type="radio" id="cards" name="online-option" value="cards">
+            Debit/Credit Cards
+        </label>
+    </label>
+     
+
+        <div id="bank-names" class="hidden">
+            <label for="bank1">
+                <input type="radio" id="bank1" name="bank-name" value="bank1">
+                SBI
+            </label>
+
+            <label for="bank2">
+                <input type="radio" id="bank2" name="bank-name" value="bank2">
+                BOB
+            </label>
+            <label for="bank2">
+                <input type="radio" id="bank2" name="bank-name" value="bank2">
+                ICICI
+            </label>
+            <label for="bank2">
+                <input type="radio" id="bank2" name="bank-name" value="bank2">
+                AXIS
+            </label>
+            <label for="bank2">
+                <input type="radio" id="bank2" name="bank-name" value="bank2">
+                OTHER 
+            </label>
+
+            <!-- Add more bank options as needed -->
+        </div>
+
+        <div id="upi-details" class="hidden">
+            
+            <label for="upi-id">Enter UPI ID:</label>
+            <input type="text" id="upi-id" name="upi-id">
+            <br>
+            <label for="upi-id">Enter PIN</label>
+            <input type="text" id="upi-id" name="upi-id">
+            <button onclick="showTotal()">Show Total Amount</button>
+        </div>
+
+        <div id="card-details" class="hidden">
+            <label for="account-number">Enter Account Number:</label>
+            <input type="text" id="account-number" name="account-number">
+            <br>
+            <label for="pin">Enter PIN:</label>
+            <input type="password" id="pin" name="pin">
+            <button onclick="showTotal()">Show Total Amount</button>
+        </div>
+    </div>
+
+    <div id="cash-payment-text" class="hidden">
+        <p>Payment will be done at the counter.</p>
+    </div>
+
+    <div id="total-amount" class="hidden">
+        <h2>Total Amount to Pay</h2>
+        <p id="amount-details"></p>
+        
+    </div>
+
+    <div id="done-animation" class="hidden">&#10004;<br>Done</div>
+</div>
+
+
+    <div id="cash-payment-text" class="hidden">
+        <p>Payment will be done at the counter.</p>
+    </div>
+
+    <button onclick="placeOrder()">Place Order</button>
+
+   
+
+
+    <div id="cancellation-policy">
+        <h2>Cancellation Policy</h2>
+        <p>Orders can be canceled within 30 minutes of placing the order. After that, no cancellations will be accepted.</p>
+    </div>
+
+   
+
+    <script>
+
+function showTotal() {
+    const totalAmountDiv = document.getElementById('total-amount');
+    const amountDetails = document.getElementById('amount-details');
+    
+    // Assuming total amount is $18.99, you can adjust this value based on your logic
+    const totalAmount = 18.99;
+
+    amountDetails.textContent = `Total Amount: $${totalAmount}`;
+    totalAmountDiv.classList.remove('hidden');
+}
+
+    function placeOrder() {
+    const paymentMethods = document.getElementsByName('payment-method');
+    let selectedMethod = '';
+
+    for (const method of paymentMethods) {
+        if (method.checked) {
+            selectedMethod = method.value;
+            break;
+        }
+    }
+
+    if (selectedMethod === 'online-payment') {
+        const onlineOptions = document.getElementsByName('online-option');
+        let selectedOption = '';
+
+        for (const option of onlineOptions) {
+            if (option.checked) {
+                selectedOption = option.value;
+                break;
+            }
+        }
+
+        if (selectedOption === 'upi') {
+            const upiId = document.getElementById('upi-id').value.trim();
+
+            if (upiId) {
+                alert(`Order placed successfully using UPI - ${upiId}`);
+            } else {
+                alert('Please enter your UPI ID');
+            }
+        } else if (selectedOption === 'cards') {
+            const bankNames = document.getElementById('bank-names');
+            const selectedBank = document.querySelector('input[name="bank-name"]:checked');
+            const accountNumber = document.getElementById('account-number').value.trim();
+
+            if (selectedBank && accountNumber) {
+                alert(`Order placed successfully using Cards - ${selectedBank.value}, Account Number - ${accountNumber}`);
+            } else {
+                alert('Please select a bank and enter your account number for card payment');
+            }
+        } else {
+            alert('Invalid online payment option selected');
+        }
+    } else if (selectedMethod === 'cash-payment') {
+        alert('Order placed successfully. Payment will be done at the counter.');
+    } else {
+        alert('Please select a payment method');
+    }
+}
+
+document.getElementById('online-payment').addEventListener('change', function() {
+    document.getElementById('online-payment-options').classList.remove('hidden');
+    document.getElementById('cash-payment-text').classList.add('hidden');
+});
+
+document.getElementById('cash-payment').addEventListener('change', function() {
+    document.getElementById('cash-payment-text').classList.remove('hidden');
+    document.getElementById('online-payment-options').classList.add('hidden');
+});
+
+document.getElementById('upi').addEventListener('change', function() {
+    document.getElementById('bank-names').classList.add('hidden');
+    document.getElementById('upi-details').classList.remove('hidden');
+    document.getElementById('card-details').classList.add('hidden');
+});
+
+document.getElementById('cards').addEventListener('change', function() {
+    document.getElementById('bank-names').classList.remove('hidden');
+    document.getElementById('upi-details').classList.add('hidden');
+    document.getElementById('card-details').classList.remove('hidden');
+});
+
+
+
+    </script>
+</body>
+</html>
+
+

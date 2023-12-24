@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FBF6F0;
+}
+#loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#loader {
+    width: 140px; /* Set the desired width of the video */
+    height: auto ; /* Maintain the aspect ratio */
+    color: #ffffff;
+    position: absolute;
+    top: 13%;
+    left: 140px;
+    
+}
+
+.loader-section {
+    background-color: #f4f4f4;
+}
+.linear-loader {
+    height: 5px; /* Set the desired height of the loading bar */
+    width: 20px;
+    background-color: #FBB900; /* Set the color of the loading bar */
+    position: relative;
+    top: 20%;
+    left: 10%;
+    
+    z-index: 1;
+    animation: loading 3s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 13%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@media (width > 500px) and (width < 999px){
+    .linear-loader {
+        position: relative;
+        top: 35%;
+        left: 14%;
+    }
+    #loader {
+        position: absolute;
+        top: 22%;
+        left: 20%;
+    }
+    @keyframes loading {
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 13%;
+        }
+        100% {
+            width: 30%;
+        }
+    }
+}
+@media (width > 1000px) {
+    .linear-loader {
+        position: relative;
+        top: 60%;
+        left: 33%;
+    }
+    #loader {
+        width: 300px; /* Set the desired width of the video */
+        height: auto ;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+}
+
+
+
+header {
+    background: #F2F2F2; 
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16); ;
+    z-index: 2;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 96px;
+}
+
+
+#logo{
+    width: 184px;
+    height: 107px;
+    background-image: url("CNT_LOGO.jpg");
+    background-size: cover;
+    position: relative;
+    bottom: 39px;   
+    
+}
+.offer {
+    width: 183px;
+    height: 61px;
+    border-radius: 10px;
+    background: #DD5252;
+    color: #FFF;
+    text-align: center;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    
+}
+.offer button {
+    background-color: #DD5252;
+    color: white;
+    border: none;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    font-size: 19px;
+    margin: 0;
+    padding-left: 15px;
+}
+.offerDropdown {
+    display: inline-block;
+    position: relative;
+}
+
+
+.offerContent {
+    display: none;
+    position: absolute;
+    left: 196px;
+    top: 80px;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.offerContent a {
+    color: rgb(83, 83, 83);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    
+}
+
+.offerContent a:hover {
+    background-color: #ffffff;
+    border-radius: 18px;
+    color: rgb(255, 216, 158);
+}
+
+.show {
+    display: block;
+}
+.offer button .dekstopSwitchIcon {
+    padding-left: 18px;
+
+}
+.region_detector {
+    width: 337px;
+    height: 54px;
+    border-radius: 11px;
+    background: #FFF;
+    margin-left: 14px;
+    padding: 7px 0 0 10px;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0);
+    
+}
+.region_detector section {
+    display: flex;
+}
+.region {
+    width: 135px;
+    height: 21px;  
+    color: #0C0C0C;
+    font-family: Speedee, 'Fira Sans', 'Poppins', sans-serif;;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+    padding-left: 3px;
+    
+}
+ .region_dropdown {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.btn {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin-left: 9px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+}
+.region_dropdown button img {
+    height: 5px;
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+    margin-left: 9px;
+}
+
+.regionContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.regionContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: speedee, 'Fira Sans', 'Poppins', sans-serif;;
+}
+
+.regionContent a:hover {
+    background-color: #f1f1f1;
+    color: #838383;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.show {
+    display: block;
+}
+.region_detector .dropdown button {
+    background-color:white ;
+    color: black;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    padding: 0;
+} 
+.dropdown_region_icon {
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    right: 3px;
+}
+
+.region_detector p {
+    margin: 6px 0 3px 0;
+    color: #707070;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2px;
+}
+.region_detector img {
+    height: 22px;
+}
+.dropdown_region_icon img {
+    height: 5px;
+}
+.user_id img {
+    margin-right: 25px;
+}
+
+.user_id div {
+    
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user_id div img:hover {
+    filter: brightness(0.9);
+}

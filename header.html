@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+<div id="loader-wrapper">
+        
+    <div class="loader-section">
+        <video id="loader" autoplay loop muted>
+        <source src="burger eye 4.mp4" type="video/mp4">
+        <!-- Your browser does not support the video tag. -->
+    </video></div>
+    <div class="linear-loader"></div>
+</div>
+<header>
+    <!-- <h1>Crisp n'Twist</h1>
+    <nav>
+        <ul>
+            <li><a href="Deals.html">Deals</a></li>
+            <li><a href="offer.html">Offer Zone</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <div class="profile-icon">
+        <img src="pp.jpg" alt="Profile Icon">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for food...">
+        <button id="search-button">Search</button>
+    </div> -->
+    <div class="container">
+        <nav id="content">
+            <div id="logo">
+                <!-- <img src="CNT LOGO.jpg" /> -->
+            </div>
+            <div class="offer">
+                <!-- <div class="offerDropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(1)">Offers
+                        <img src="🦆 icon _nav arrow down_.svg" />
+                    </button>
+                    <div class="dropdown-content" id="myDropdown1">
+                        <a href="#">Offers</a>
+                        <a href="#" onclick="templatesVisibility()">Deals</a>
+                        <a href="#">Settings</a>
+                    </div>
+                </div> -->
+                <div class="offerdropdown">
+                    <button class="dropbtn" onclick="toggleDropdown(1)">Offers
+                        <img class="dekstopSwitchIcon" src="🦆 icon _nav arrow down_.svg" />
+                        <img class="mobileSwitchIcon" src="delivery.png" />
+                    </button>
+                    <div class="dropdown-content offerContent" id="myDropdown1">
+                        <a href="#">Offers</a>
+                        <a href="#" onclick="templatesVisibility()">Deals</a>
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="region_detector">
+                <section>
+                    <img src="🦆 icon _globe_.svg" alt="">
+                    <!-- <div class="region">Enter Your Region</div> -->
+                    <!-- <div class="region_dropdown">
+                        <button class="btn" id="nameChangeOnSelection" onclick="toggleDropdown(2)">Enter Your Region
+                            <img src="🦆 icon _nav arrow down_black.svg" />
+                        </button>
+                        <div class="dropdown-content" id="myDropdown2">
+                            <a href="#" id="changeButton" onclick="buttonNameChange()">West South</a>
+                            <a href="#" id="changeText" onclick="buttonChange()">North East</a>
+                        </div>
+                    </div> -->
+                    <div class="region_dropdown">
+                        <button class="btn" id="nameChangeOnSelection" onclick="toggleDropdown(2)">Enter Your Region
+                            <img src="🦆 icon _nav arrow down_black.svg" />
+                        </button>
+                        <div class="dropdown-content regionContent" id="myDropdown2">
+                            <a href="#" id="changeButton" onclick="buttonNameChange()">West South</a>
+                            <a href="#" id="changeText" onclick="buttonChange()">North East</a>
+                            
+                        </div>
+                    </div>
+                </section>
+                <!-- <div class="dropdown_region_icon"><img src="🦆 icon _nav arrow down_black.svg" alt=""></div> -->
+                
+                <p>Please enter your location we can search the ...</p>
+            </div>
+        </nav>
+        <div class="user_id">
+            <div class="clickable-image" onclick="openHTMLFile()">
+                <img src="profile.png" alt="Click to Open HTML File">
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+document.onreadystatechange = function () {
+    var loaderWrapper = document.getElementById('loader-wrapper');
+
+    if (document.readyState === 'complete') {
+        // Hide the loader when the page is fully loaded
+        loaderWrapper.style.display = 'none';
+    } else {
+        // Show the loader while the page is loading
+        loaderWrapper.style.display = 'flex';
+    }
+};
+
+
+</script>
+
+    
+</body>
+</html>

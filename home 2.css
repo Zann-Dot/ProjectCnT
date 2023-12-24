@@ -1,0 +1,727 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FBF6F0;
+}
+#loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#loader {
+    width: 140px; /* Set the desired width of the video */
+    height: auto ; /* Maintain the aspect ratio */
+    color: #ffffff;
+    position: absolute;
+    top: 13%;
+    left: 140px;
+    
+}
+
+.loader-section {
+    background-color: #f4f4f4;
+}
+.linear-loader {
+    height: 5px; /* Set the desired height of the loading bar */
+    width: 20px;
+    background-color: #FBB900; /* Set the color of the loading bar */
+    position: relative;
+    top: 20%;
+    left: 10%;
+    
+    z-index: 1;
+    animation: loading 3s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 13%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@media (width > 500px) and (width < 999px){
+    .linear-loader {
+        position: relative;
+        top: 35%;
+        left: 14%;
+    }
+    #loader {
+        position: absolute;
+        top: 22%;
+        left: 20%;
+    }
+    @keyframes loading {
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 13%;
+        }
+        100% {
+            width: 30%;
+        }
+    }
+}
+@media (width > 1000px) {
+    .linear-loader {
+        position: relative;
+        top: 60%;
+        left: 33%;
+    }
+    #loader {
+        width: 300px; /* Set the desired width of the video */
+        height: auto ;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+}
+
+
+
+header {
+    background: #F2F2F2; 
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.16); ;
+    z-index: 2;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 96px;
+}
+
+
+#logo{
+    width: 184px;
+    height: 107px;
+    background-image: url("CNT_LOGO.jpg");
+    background-size: cover;
+    position: relative;
+    bottom: 39px;   
+    
+}
+.offer {
+    width: 183px;
+    height: 61px;
+    border-radius: 10px;
+    background: #DD5252;
+    color: #FFF;
+    text-align: center;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    
+}
+.offer button {
+    background-color: #DD5252;
+    color: white;
+    border: none;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    font-size: 19px;
+    margin: 0;
+    padding-left: 15px;
+}
+.offerDropdown {
+    display: inline-block;
+    position: relative;
+}
+
+
+.offerContent {
+    display: none;
+    position: absolute;
+    left: 196px;
+    top: 80px;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.offerContent a {
+    color: rgb(83, 83, 83);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    
+}
+
+.offerContent a:hover {
+    background-color: #ffffff;
+    border-radius: 18px;
+    color: rgb(255, 216, 158);
+}
+
+.show {
+    display: block;
+}
+.offer button img {
+    padding-left: 18px;
+
+}
+.region_detector {
+    width: 337px;
+    height: 54px;
+    border-radius: 11px;
+    background: #FFF;
+    margin-left: 14px;
+    padding: 7px 0 0 10px;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0);
+    
+}
+.region_detector section {
+    display: flex;
+}
+.region {
+    width: 135px;
+    height: 21px;  
+    color: #0C0C0C;
+    font-family: Speedee, 'Fira Sans', 'Poppins', sans-serif;;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+    padding-left: 3px;
+    
+}
+ .region_dropdown {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.btn {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin-left: 9px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+}
+.region_dropdown button img {
+    height: 5px;
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+    margin-left: 9px;
+}
+
+.regionContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.regionContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: speedee, 'Fira Sans', 'Poppins', sans-serif;;
+}
+
+.regionContent a:hover {
+    background-color: #f1f1f1;
+    color: #838383;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.show {
+    display: block;
+}
+.region_detector .dropdown button {
+    background-color:white ;
+    color: black;
+    font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    padding: 0;
+} 
+.dropdown_region_icon {
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    right: 3px;
+}
+
+.region_detector p {
+    margin: 6px 0 3px 0;
+    color: #707070;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 2px;
+}
+.region_detector img {
+    height: 22px;
+}
+.dropdown_region_icon img {
+    height: 5px;
+}
+.user_id img {
+    margin-right: 25px;
+}
+
+.user_id div {
+    
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user_id div img:hover {
+    filter: brightness(0.9);
+}
+
+.slideshow-container {
+    background: #252525;
+}
+div .mySlides img{
+    width: 100vw;
+
+}
+@media (width>800px) {
+    div .mySlides img{
+        width: 99vw;
+    }
+}
+.blackStrip_menuDivider {
+    height: 50px;
+    background: #252525;
+}
+.menu_searchbar {
+    height: 138px;;
+    background: #FBF6F0;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 15px 53.3px 0px rgba(62, 49, 34, 0.11);
+}
+.menu_searchbar h3{
+    margin: 0;
+    color: #252525;
+    font-family: Speedee, 'Fira Sans', sans-serif;;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 35px 0 0 85px;
+
+}
+.menu_searchbar button {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.20);
+    width: 81px;
+    height: 27px;
+    border: none;
+    margin-left: 90px;
+    font-family: speedee, 'Poppins', 'Fira Sans', sans-serif;;
+    color: #252525;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.menu_searchbar button:hover {
+    background: #be3232;
+    color: #e4e4e4;
+}
+.menu_searchbar button img {
+    padding: 0 4px 0 0;
+}
+.deals_and_placards {
+    display: flex;
+    gap: 30px;
+    
+}
+.deals.burgerMenu :hover{
+    color: #0C0C0C;
+    background-color: #0C0C0C;
+}
+.deals{
+    width: 230px;
+    height: 550px;
+    border-radius: 7px;
+    background: #FFF;
+    color: #8D8D8D;
+    box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.08);
+    margin-top: 13px;
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.burgerMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(burger\ menu.jpg);
+    background-size: cover;
+
+}
+
+.deals h3 {
+    width: 130px;
+    position: relative;
+    left: 50px;
+    margin: 13px 0 10px 13px;
+    font-family: speedee, 'Fira', sans-serif;
+    font-size: 20px;
+    color: #0C0C0C;
+    
+    
+}
+.deals h3:hover{
+background-color:#DD5252 ;
+cursor: pointer;
+}
+.coffeeAndBeverages h3 {
+    width: 130px;
+    position: relative;
+    left: 50px;
+    margin: 5px 0 10px 13px;
+    font-family: speedee, 'Fira', sans-serif;
+    font-size: 14px;
+}
+.pizzaMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(pizza\ menu.png);
+    background-size: cover;
+}
+
+.pastaMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(pasta\ menu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.sandwichMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(sandwich\ menu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.friesAndSidesMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(fries\ and\ sides\ menu.jpg);
+    background-size: 66%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.japaneseMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(japanese\ menu.jpg);
+    background-size: cover;
+}
+.mealForOneMenu {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(meal\ menu2.png);
+    background-size: cover;
+}
+.coffeeAndBeverages {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(beverage\ menu.jpg);
+    background-size: cover;
+}
+.Desserts {
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background: url(desert\ menu.png);
+    background-size: cover;
+}
+
+.placards {
+    width: 1075px;
+    height: 1128px;
+    /* background-color: #DD5252; */
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.placards div {
+    width: 342px;
+    height: 356px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 50.3px 0px rgba(0, 0, 0, 0.02);
+    background-color: white;
+}
+.placards .box1 {
+    background-image: url(burger\ menu.jpg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+/*
+.placards .box2 {
+    background-image: url(placard\ 2.jpg);
+    background-size: cover;
+}
+.placards .box3 {
+    background-image: url(placard\ 3.jpg);
+    background-size: cover;
+}
+.placards .box4 {
+    background-image: url(placard\ 4.jpg);
+    background-size: cover;
+}
+.placards .box5 {
+    background-image: url(placard\ 9.jpg);
+    background-size: cover;
+}
+.placards .box6 {
+    background-image: url(placard\ 6.jpg);
+    background-size: cover;
+}
+.placards .box7 {
+    background-image: url(placard\ 7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.placards .box8 {
+    background-image: url(placard\ 5.jpg);
+    background-size: cover;
+}
+.placards .box9 {
+    background-image: url(placard\ 8.jpg);
+    background-size: cover;
+} */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+.addToCartButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addToCartButton:hover {
+    background-color: #45a049;
+}
+
+.placards .addToCartButton {
+    width: 285px;
+    height: 41px;
+    border-radius: 7px;
+    background: #FBB900;
+    font-family: speedee, 'Fira', sans-serif;
+    position: relative;
+    top: 288px;
+    left: 28.5px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 23px;
+}
+.addToCartButton img {
+    margin: 0 0 1px 5px;
+    height: 14px;
+}
+
+
+.open {
+    height: 200px;
+    width: 200px;
+    background-color: #4CAF50;
+}
+.position {
+    position: relative;
+    top: 96px;
+}
+.divider-ToMyCart {
+    width: 2px;
+    height: 130vh;
+    background: rgba(208, 193, 177, 0.44);
+    margin-top: 34px;
+    margin-left: 20px;
+}
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headings h5 {
+    color: #252525;
+    font-family: Speedee, 'Fira', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 18px;
+    margin-top: 45px;
+}
+.headings h6 {
+        color: #D90108;
+    font-family: Speedee;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 10px;
+}
+.myCartArea .cartView{
+    width: 443px;
+    height: 500px;
+    flex-shrink: 0; 
+    border-radius: 15px;
+    background: #f4f4f4;
+    box-shadow: 0px 4px 50.3px 0px rgba(0, 0, 0, 0.10);
+    /* margin-top: 120px; */
+}
+.cartView video {
+    width: 289px;
+    height: 296px;
+    position: relative;
+    top: 50px;
+
+    
+}
+ /* Some basic styling for demonstration purposes */
+ #itemList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.cartView {
+    text-align: center;
+    color: #2B2B2B;
+    font-family: Speedee, 'Fira', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.cartView h3 {
+    font-size: 32px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    bottom: 25px;
+    
+}
+.cartView h4 {
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    bottom: 12px;
+}
+.viewCartButton {
+    display: none;
+    width: 413px;
+    height: 62px;   
+    border-radius: 19px;
+background: #FBB900;
+}
+.viewCartButton img {
+    height: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 200px;
+    background-color: #0C0C0C;
+    position: relative;
+    bottom: 0;
+    margin-top: 500px;
+}
