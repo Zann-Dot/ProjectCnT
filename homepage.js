@@ -233,7 +233,7 @@ function goToCheckoutPage() {
     window.location.href = 'CartPage/checkout.html';
 }
 function goToMenuPage() {
-    window.location.href = '../MobileMenuPage.html';
+    window.location.href = 'MobileMenuPage.html';
 }
 // function goToMenuPage() {
 //     window.location.href = '../MobileMenuPage.html';
@@ -275,5 +275,5 @@ const search = () => {
 };
 
 function goToPay() {
-    window.location.href = '../../payment portal/paycnt.html';
+    window.location.href = '../payment portal/paycnt.html';
 }
