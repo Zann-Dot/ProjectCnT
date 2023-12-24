@@ -44,7 +44,15 @@
             font-size: 24px;
             color: aliceblue;
         }
-       
+        button {
+            -webkit-animation: color-change-3x 4s linear infinite alternate both;
+	        animation: color-change-3x 4s linear infinite alternate both;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -53,8 +61,13 @@
         <p>Thank you for visting!</p>
         <br>
         <p>You will get your order after graduation! &#128522</p>
+        <button onclick="gobacktohome()">Go Back To Home</button>
     </div>
     
-
+    <script>
+        function gobacktohome() {
+            window.location.href = '../afterscanpage.html';
+        }
+    </script>
 </body>
 </html>
