@@ -1,17 +1,17 @@
 [
     {
         "id": "ib8873b-d873gb8312",
-        "image": "/image/Burger and wraps/Veggie Burger.jpg",
+        "image": "../image/Burger and wraps/Veggie Burger.jpg",
         "name": "Veggie Burger",
         "price": 129,
-        "sign": "/veg sign.png"
+        "sign": "../veg sign.png"
     },
     {
         "id": "ib4473b-d873327312",
-        "image": "/image/Burger and wraps/Aloo Tikki Burger.jpg",
+        "image": "../image/Burger and wraps/Aloo Tikki Burger.jpg",
         "name": "Aloo Tikki Burger",
         "price": 79,
-        "sign": "/veg sign.png"
+        "sign": "../veg sign.png"
     },
     {
         "id": "ib3273b-dbfiw3gb8312",
