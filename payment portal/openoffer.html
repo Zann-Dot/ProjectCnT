@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.deals h3:hover{
+    color: #757575;
+    cursor: pointer;
+}
+.deals {
+    background-color: #fff;
+}
+.totalamt{
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payheading{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    
+}
+.contentbox{
+    width: 50%;
+    padding: 40px;
+    border: 1px solid #dfdede; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background: linear-gradient(60deg, #eeeeee34, rgb(255, 255, 255)); ; /* Background color of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+.Offer{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(offer.png);
+    background-size: cover;
+}
+.Upi{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(upii.png);
+    background-size: cover;
+}
+.Wallets{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(wallet2.png);
+    background-size: cover;
+}
+.cards{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(cards.png);
+    background-size: cover;
+}
+.net{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(net.png);
+    background-size: cover;
+}
+.paylater{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(paylater.png);
+    background-size: cover;
+}
+.cashondev{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(cash.png);
+    background-size: cover;
+}
+.paybyupi{
+            font-size: 29px;
+            font-weight: 120;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+}
+.paybyupi p{
+            font-size: 20px;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+}
+.enterupi{
+            font-size: 25px;
+            font-weight: 120;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+}
+.gen{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.verify{
+    
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.logoofpay{
+    display: flex;
+}
+.paytm{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(paytm.png);
+    background-size: cover;
+}
+.phonepay{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(phone.png);
+    background-size: cover;
+}
+.googlepay{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(gpay2.png);
+    background-size: cover;
+}
+.upi{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(upipay.png);
+    background-size: cover;
+}
+.BHIM{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(bhim.png);
+    background-size: cover;
+}
+.scanimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+}
+.openoffer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}   
+input {
+    width: 80%;
+    padding: 10px 10px 10px 30px;
+    font-size: 18px;
+    border: 1px solid aliceblue;
+    border-radius: 12px ;
+    background-color: #fbf6f0;
+    outline: none;
+    color: #757575;
+}
+input:hover{
+    border: 3px solid rgb(237, 175, 104);
+    
+}
+
+.openoffer button{
+    background-color: rgb(238, 186, 44);
+    color: white;
+    width: 12em;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+    </style>
+   <script src="paycnt.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+ <body>
+     <!-- <div class="totalamt">Total Amount Payable
+      <br><p>$344</p></div> -->
+      <div class="contentbox">
+      <div class="payheading">Payment Methods</div>
+      
+    <div class="deals_and_placards">
+        <div class="deals">
+            <div class="Offer" onclick="openoffer()"><h3>Offers</h3></div>
+            <div class="Upi" onclick="openupi()"><h3>UPI</h3></div>
+            <div class="Wallets"><h3>Wallets</h3></div>
+            <div class="cards"><h3>Credit/Debit Card</h3></div>
+            <div class="net "><h3>Net Banking</h3></div>
+            <div class="paylater"><h3>Pay later</h3></div>
+            <div class="cashondev" onclick="opencash()"><h3>Cash on delivery</h3></div>
+           
+        </div>
+         <div class="openoffer">
+            <br>
+            <!-- <label for="couponCode">Enter Coupon Code:</label> -->
+            <br>
+            <br>
+            <input type="text" id="coupancode" placeholder="Enter coupan code">
+            <br>
+            <br>
+            
+            <button onclick="applied()">Apply Now</button>
+         </div>
+       </div>
+      
+ </body>
+ </html>

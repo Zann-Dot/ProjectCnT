@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <title>Signup1</title>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"defer></script>
+    <script src="validation.js"defer></script>
+    <style>
+      body{
+  font-family: speedee;
+  margin: 0;
+  
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url(backgroundblur.png);
+  backdrop-filter: blur(18px);
+  
+}
+
+.login-container {
+  background-color: #FBF6F0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form, div {
+  display: flex;
+  flex-direction: column;
+  
+}
+.login-container h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  color: #2b2b2b;
+}
+.login-container p {
+  margin: 0 0 60px 0;
+  text-align: center;
+  color: #817854;
+  font-family: 'Rubik', sans-serif;
+}
+
+ div > input {
+  width: 300px;
+  height: 38px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fcf9f6;
+  margin: 0 0 20px 0;
+  outline-style: none;
+}
+
+
+button {
+  background-color: rgb(212, 212, 212);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: speedee;
+  height: 45px;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: rgb(231, 231, 231);
+}
+#loginForm {
+  width: 300px;
+}
+div > label {
+  color: #676767;
+  font-family: 'Rubik', sans-serif;
+  font-weight: light;
+  margin: 0 0 10px 0;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+  </style>
+
+
+  </head>
+  <body>
+
+    <div class="login-container">
+          <h2>Hi there!</h2>
+          <p>Welcome to Crisp n' Twist</p>
+          <form action="process-signup1.php" method="post" id="signup" novalidate>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+            </div>
+
+            <div>
+              <label for="password confirmation">Repeat password</label>
+              <input type="password" id="password_confirmation"
+              name="password_confirmation">
+            </div>
+
+             <button>Sign Up</button>
+          </form>
+    </div>
+    
+   
+  </body>
+  </html>

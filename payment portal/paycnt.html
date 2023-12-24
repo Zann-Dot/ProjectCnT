@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
+}
+.deals h3:hover{
+    color: #757575;
+    cursor: pointer;
+}
+.deals {
+    background-color: #fff;
+}
+.totalamt{
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payheading{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    
+}
+.scaning {
+    display: none;
+}
+
+
+.scaning img{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    -webkit-animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+@-webkit-keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+} 
+    
+.contentbox{
+    max-width: 70%;
+    padding: 40px;
+    border: 1px solid #dfdede; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background: linear-gradient(60deg, #eeeeee34, rgb(255, 255, 255)); ; /* Background color of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+.Offer{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(offer.png);
+    background-size: cover;
+}
+.Upi{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(upii.png);
+    background-size: cover;
+}
+.Wallets{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(wallet2.png);
+    background-size: cover;
+}
+.cards{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(cards.png);
+    background-size: cover;
+}
+.net{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(net.png);
+    background-size: cover;
+}
+.paylater{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(paylater.png);
+    background-size: cover;
+}
+.cashondev{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(cash.png);
+    background-size: cover;
+}
+.paybyupi{
+    font-size: 29px;
+    font-weight: 120;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    text-align: left;
+    color: #e0a44a;
+    margin-left: 30px;
+}
+.paybyupi p{
+    font-size: 20px;
+    color: #2b2b2b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.enterupi{
+    font-size: 25px;
+    font-weight: 120;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.gen{
+    font-size: 18px;
+    background-color: rgb(238, 186, 44);
+    color: #2b2b2b;
+    padding: 13px 25px;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.verify{
+    
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.logoofpay{
+    display: flex;
+    gap: 10px;
+}
+.paytm{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(paytm.png);
+    background-size: cover;
+}
+.phonepay{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(phone.png);
+    background-size: cover;
+}
+.googlepay{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(gpay2.png);
+    background-size: cover;
+}
+.upi{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(upipay.png);
+    background-size: cover;
+}
+.BHIM{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(bhim.png);
+    background-size: cover;
+}
+     
+@media (width < 700px) {
+    body {
+        display: block;
+        background: #FBF6F0;
+    }
+    .contentbox {
+        display: none;
+    }
+    .mobile-view-content-box {
+
+    }
+    .mobile-view-content-box header {
+        background-color: #e0bd4a;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 70px;
+        padding-left: 20px;
+        gap: 10px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    header img {
+        height: 20px;
+    }
+    header h3 {
+        font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+        font-size: 16px; 
+    }
+    .offers h3 {
+        margin: 0 0 10px 0;
+        font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+        font-size: 18px;
+        color: #444444;
+    }
+    .div1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .upi-content {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0px 4px 0 rgba(0,0,0,0.05);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .offer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0px 4px 0 rgba(0,0,0,0.05);
+        padding: 10px;
+    }
+    .offerupi-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .offerupi-content img {
+        height: 40px;
+    }
+    .offerupi-content h4 {
+        margin: 0 20px 0 0;
+        font-family: 'Noto Sans', 'Poppins',  sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #2b2b2b;
+        padding-left: 5px;
+    }
+    .offerupi-content .left-arrow {
+        height: 15px;
+        transform: rotate(180deg);
+        margin-right: 5px;
+    }
+
+    .upi-option {
+        display: flex;
+        flex-direction: column;
+        display: none;
+        -webkit-animation: flip-horizontal-bottom 0.3s ease-in-out both;
+	        animation: flip-horizontal-bottom 0.3s ease-in-out both;
+    }
+    @-webkit-keyframes flip-horizontal-bottom {
+        0% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+        }
+        }
+        @keyframes flip-horizontal-bottom {
+        0% {
+            -webkit-transform: rotateX(-90deg);
+                    transform: rotateX(-90deg);
+        }
+        100% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+        }
+    }
+
+
+    .upi-option p {
+        margin: 5px 0 10px 8px;
+        font-family: 'Noto Sans', 'Poppins',  sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #a0a0a0;
+    }
+    .upi-option input {
+        margin-top: 0px;
+        padding: 12px;
+        font-size: 18px;
+        background-color: #FBF6F0 ;
+        border: 1px solid rgb(233, 185, 83);
+        border-radius: 6px ;
+        outline: none;
+    }
+    .upi-option input::placeholder {
+        font-size: 14px;
+    }
+    .button-verify button {
+        font-size: 12px;
+        background-color:  rgb(231, 193, 109);
+        color: #2b2b2b;
+        padding: 10px 30px;
+        font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        /* margin-bottom: 20px; */
+    }
+    .offer-content h4 {
+        margin: 0 20px 0 0;
+        font-family: 'Noto Sans', 'Poppins',  sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #2b2b2b;
+        padding-left: 5px;
+    }
+    .offer-content img{
+        height: 40px;
+    }
+    .offer-content .left-arrow {
+        height: 15px;
+        transform: rotate(180deg);
+        margin-right: 5px;
+    }
+    .main-body {
+        padding: 20px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .upi-option .button-verify {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .verifyed {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #0BC79C;
+        -webkit-animation: fade-in-right 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-right 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+         display: none;
+    }
+    @-webkit-keyframes fade-in-right {
+        0% {
+            -webkit-transform: translateX(50px);
+                    transform: translateX(50px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+            opacity: 1;
+        }
+        }
+        @keyframes fade-in-right {
+        0% {
+            -webkit-transform: translateX(50px);
+                    transform: translateX(50px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+            opacity: 1;
+        }
+        }
+    .upi-option .verifyed img {
+        height: 14px;
+    }
+    .upi-option .verifyed h3 {
+        font-size: 14px;
+        margin: 0 0 0 4px;
+        color: #0BC79C;
+    }
+    .COD-Content {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0px 4px 0 rgba(0,0,0,0.05);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+    .offerCash-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .offerCash-content h4 {
+        margin: 0 20px 0 0;
+        font-family: 'Noto Sans', 'Poppins',  sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #2b2b2b;
+        padding-left: 5px;
+    }
+    .offerCash-content img{
+        height: 40px;
+    }
+    .offerCash-content .left-arrow {
+        height: 15px;
+        transform: rotate(180deg);
+        margin-right: 5px;
+    }
+    .cash-option {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .cash-option button {
+        font-size: 14px;
+        background-color:  rgb(231, 193, 109);
+        color: #2b2b2b;
+        padding: 10px 24px;
+        font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+        display: none;
+        -webkit-animation: slit-in-vertical 0.3s ease-out both;
+                animation: slit-in-vertical 0.3s ease-out both;
+    }
+    @-webkit-keyframes slit-in-vertical {
+        0% {
+            -webkit-transform: translateZ(-800px) rotateY(90deg);
+                    transform: translateZ(-800px) rotateY(90deg);
+            opacity: 0;
+        }
+        54% {
+            -webkit-transform: translateZ(-160px) rotateY(87deg);
+                    transform: translateZ(-160px) rotateY(87deg);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translateZ(0) rotateY(0);
+                    transform: translateZ(0) rotateY(0);
+        }
+        }
+    @keyframes slit-in-vertical {
+        0% {
+            -webkit-transform: translateZ(-800px) rotateY(90deg);
+                    transform: translateZ(-800px) rotateY(90deg);
+            opacity: 0;
+        }
+        54% {
+            -webkit-transform: translateZ(-160px) rotateY(87deg);
+                    transform: translateZ(-160px) rotateY(87deg);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translateZ(0) rotateY(0);
+                    transform: translateZ(0) rotateY(0);
+        }
+    }
+}
+
+
+    </style>
+    <script src="paycnt.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+ <body>
+     <!-- <div class="totalamt">Total Amount Payable
+      <br><p>$344</p></div> -->
+    <div class="contentbox">
+        <div class="payheading">Payment Methods</div>
+      
+        <div class="deals_and_placards">
+            <div class="deals">
+                <div class="Offer" onclick="openoffer()"><h3>Offers</h3></div>
+                <div class="Upi" onclick="openupi()"><h3>UPI</h3></div>
+                <div class="Wallets"><h3>Wallets</h3></div>
+                <div class="cards"><h3>Credit/Debit Card</h3></div>
+                <div class="net "><h3>Net Banking</h3></div>
+                <div class="paylater"><h3>Pay later</h3></div>
+                <div class="cashondev" onclick="opencash()"><h3>Cash on delivery</h3></div>
+            
+            </div>
+            
+                <div class="paybyupi">Pay By any UPI Apps
+                    <br>
+                    <p> Scan the QR using any UPI app on your mobile phone like 
+                        phonepay,paytm,googlepay,BHIM, etc
+                    <br>
+                    <div class="logoofpay">
+                    <div class="paytm"></div> 
+                    <div class="phonepay"></div>
+                    
+                    <div class="googlepay"></div>
+
+                    <div class="upi"></div>
+                    <div class="BHIM"></div>
+                    </div>
+                    <br>
+                    <button class="gen" onclick="generateQRCode()">Generate QR Code</button>
+                    </p>
+                    <br>
+                    
+                    <div class="scaning">
+                        <img src="QR_code.svg" alt="">
+                    </div>
+                </div>
+                
+        </div>
+    </div>  
+       
+    <div class="mobile-view-content-box">
+        <header>
+            <img src="left arrow.png" alt="" onclick="goToCart()">
+            <h3>Payment Methods</h3>
+        </header>
+
+        <div class="main-body">
+            <div class="offers">
+                <h3>Offers</h3>
+                <div class="offer-content">
+                    <div class="div1">
+                        <img src="offer.png">
+                        <h4>Offers and Coupons Available</h4>
+                    </div>
+                    <img class="left-arrow" src="../arrow-left-primary.svg">
+                </div>
+            </div>
+            <div class="offers">
+                <h3>UPI</h3>
+                <div class="upi-content">
+                    <div class="offerupi-content" onclick="displayUpi()">
+                        <div class="div1">
+                            <img src="upipay.png">
+                            <h4>UPI Options</h4>
+                        </div>
+                        <img class="left-arrow" src="../arrow-left-primary.svg">
+                    </div>
+                    <div class="upi-option">
+                        <input type="text" placeholder="Username@bankname">
+                        <p>A payment request wil be  sent to this UPI ID</p>
+                        <div class="button-verify">
+                            <button class="verifyAndPay" onclick="verifyAndPay()">Verify</button>
+                            <div class="verifyed">
+                                <img src="check.png" alt="">
+                                <h3>verified</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="offers">
+                <h3>Wallets</h3>
+                <div class="offer-content">
+                    <div class="div1">
+                        <img src="wallet1.png" style="width: 40px;">
+                        <h4>Wallets Options Available</h4>
+                    </div>
+                    
+                    <img class="left-arrow" src="../arrow-left-primary.svg">
+                </div>
+            </div>
+            <div class="offers">
+                <h3>Credit/Debit Card</h3>
+                <div class="offer-content">
+                    <div class="div1">
+                        <img src="credit-card.png" style="height: 24px; margin: 8px;">
+                        <h4>Credit/Debit Card</h4>
+                    </div>
+                    
+                    <img class="left-arrow" src="../arrow-left-primary.svg">
+                </div>
+            </div>
+            <div class="offers">
+                <h3>Cash On Delivery</h3>
+                <div class="COD-Content">
+                    <div class="offerCash-content" onclick="displayPayButton()">
+                        <div class="div1">
+                            <img src="cash.png">
+                            <h4>Cash On Delivery</h4>
+                        </div>  
+                        <img class="left-arrow" src="../arrow-left-primary.svg">
+                    </div>
+                    <div class="cash-option">
+                        <button class="payfinal" onclick="openPaySuccessful()">Proceed to Pay</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+      
+ </body>
+ </html>

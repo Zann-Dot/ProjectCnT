@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.deals h3:hover{
+    color: #757575;
+    cursor: pointer;
+}
+.deals {
+    background-color: #fff;
+}
+.totalamt{
+    font-size: 25px;
+    font-weight: 100;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payheading{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    
+}
+.contentbox{
+    width: 50%;
+    padding: 40px;
+    border: 1px solid #dfdede; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background: linear-gradient(60deg, #eeeeee34, rgb(255, 255, 255)); ; /* Background color of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+.Offer{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(offer.png);
+    background-size: cover;
+}
+.Upi{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(upii.png);
+    background-size: cover;
+}
+.Wallets{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(wallet2.png);
+    background-size: cover;
+}
+.cards{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(cards.png);
+    background-size: cover;
+}
+.net{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(net.png);
+    background-size: cover;
+}
+.paylater{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(paylater.png);
+    background-size: cover;
+}
+.cashondev{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(cash.png);
+    background-size: cover;
+}
+.scaning {
+    display: none;
+}
+
+
+.scaning img{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    -webkit-animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+@-webkit-keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+
+.paybyupi{
+    font-size: 22px;
+    font-weight: 120;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    text-align: left;
+    color: #2b2b2b;
+    margin-left: 30px;
+}
+.paybyupi p{
+    font-size: 18px;
+    color: #a8a6a6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.enterupi{
+            font-size: 20px;
+            font-weight: 120;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            
+}
+.gen{
+    font-size: 18px;
+    background-color: rgb(238, 186, 44);
+    color: #2b2b2b;
+    padding: 20px 50px;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.verify{
+    
+    background-color: rgb(238, 186, 44);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.logoofpay{
+    display: flex;
+    gap: 15px;
+}
+.paytm{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(paytm.png);
+    background-size: cover;
+}
+.phonepay{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(phone.png);
+    background-size: cover;
+}
+.googlepay{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(gpay2.png);
+    background-size: cover;
+    background-position: center;
+}
+.upi{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(upipay.png);
+    background-size: cover;
+}
+.BHIM{
+    border: 0.2px solid #d3d3d3;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+
+    background: url(bhim.png);
+    background-size: cover;
+}
+  
+.openupi {
+    font-size: 18px;
+    color:rgb(233, 185, 83) ;
+  }   
+.openupi p {
+    color: #757575;
+    font-size: 17px;
+    margin: 15px 0 30px 5px;
+}      
+ .openupi input {
+    margin-top: 10px;
+    padding: 20px;
+    width: 70%;
+    font-size: 18px;
+    border: 2px solid rgb(233, 185, 83);
+    border-radius: 10px ;
+    outline: none;
+}
+.openupi input:hover{
+    
+    border: 3px solid rgb(237, 175, 104);
+    
+}
+.openupi button {
+    font-size: 18px;
+    background-color:  rgb(231, 193, 109);
+    color: #2b2b2b;
+    padding: 20px 50px;
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+}
+.verifyed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0BC79C;
+    gap: 10px;
+    -webkit-animation: fade-in-right 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-right 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    display: none;
+}
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.verifyed img {
+    height: 20px;
+}
+.button-verify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.verifyed h3 {
+    margin: 0;
+}
+    </style>
+   <script src="paycnt.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+ <body>
+     <!-- <div class="totalamt">Total Amount Payable
+      <br><p>$344</p></div> -->
+      <div class="contentbox">
+      <div class="payheading">Payment Methods</div>
+      
+    <div class="deals_and_placards">
+        <div class="deals">
+            <div class="Offer" onclick="openoffer()"><h3>Offers</h3></div>
+            <div class="Upi" onclick="openupi()"><h3>UPI</h3></div>
+            <div class="Wallets"><h3>Wallets</h3></div>
+            <div class="cards"><h3>Credit/Debit Card</h3></div>
+            <div class="net "><h3>Net Banking</h3></div>
+            <div class="paylater"><h3>Pay later</h3></div>
+            <div class="cashondev" onclick="opencash()"><h3>Cash on delivery</h3></div>
+           
+        </div>
+           
+            <div class="paybyupi">
+                Pay By any UPI Apps
+                <br>
+                <p> Scan the QR using any UPI app on your mobile phone like 
+                    phonepay,paytm,googlepay,BHIM, etc
+                <br>
+                <div class="logoofpay">
+                <div class="paytm"></div> 
+                <div class="phonepay"></div>
+                
+                <div class="googlepay"></div>
+
+                <div class="upi"></div>
+                <div class="BHIM"></div>
+                </div>
+                <br>
+                <button class="gen" onclick="generateQRCode()">Generate QR Code</button>
+                </p>
+                <div class="scaning">
+                    <img src="QR_code.svg" alt="">
+                </div>
+                <br>
+                <div class="openupi">
+                    UPI ID 
+                    <br>
+                    <input type="text" placeholder="Username@bankname"><br>
+                    <p>A payment request wil be  sent to this UPI ID</p>
+                    <div class="button-verify">
+                        <button class="verifyAndPay" onclick="verifyAndPay()">Verify</button>
+                        <div class="verifyed">
+                            <img src="check.png" alt="">
+                            <h3>verified</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+             
+            </div>
+           
+          
+            </div>
+           
+           
+        </div>  
+       
+       </div>
+
+ </body>
+ </html>
