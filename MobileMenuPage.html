@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="menuPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader-wrapper">
+        
+        <div class="loader-section">
+            <video id="loader" autoplay loop muted>
+            <source src="burger eye 4.mp4" type="video/mp4">
+            <!-- Your browser does not support the video tag. -->
+        </video></div>
+        <div class="linear-loader"></div>
+    </div>
+
+    <header>
+        <div class="header-title">
+            <h3>Our Menu</h3>
+            <img onclick="goToSearchPage()" src="selected searchTab.png" alt="">
+        </div>
+        <div class="header-button">
+            <button>Veg</button>
+            <button>Non-Veg</button>
+        </div>
+    </header>
+        
+    <div class="main-body">
+        <div class="menu-category-swiper">
+            <div class="category">
+                <img style="width: 70px;" src="/image/Flyers PNG/burger wrap menu.png">
+                <h4>Burgers & Wraps</h4>
+            </div>
+            <div class="category">
+                <img style="width: 50px;" src="/image/Flyers PNG/Pizza menu.png">
+                <h4>Pizza</h4>
+            </div>
+            <div class="category">
+                <img style="width: 50px;" src="/image/Flyers PNG/pasta menu.png">
+                <h4>Pasta</h4>
+            </div>
+            <div class="category">
+                <img style="width: 70px;" src="/image/Flyers PNG/sandwich menu.png">
+                <h4>Sandwiches</h4>
+            </div>
+            <div class="category">
+                <img style="width: 90px;" src="/image/Flyers PNG/fries and sides.png">
+                <h4>fries & Sides</h4>
+            </div>
+            <div class="category">
+                <img src="/image/Flyers PNG/japanese menu.png">
+                <h4>Japanese</h4>
+            </div>
+            <div class="category">
+                <img src="/image/Flyers PNG/meal menu2.png">
+                <h4>Meal for One</h4>
+            </div>
+            <div class="category">
+                <img style="width: 90px;" src="/image/Flyers PNG/beverages menu.png">
+                <h4>Beverages & Coffee</h4>
+            </div>
+            <div class="category">
+                <img src="/image/Flyers PNG/desserts menu.png">
+                <h4>Desserts</h4>
+            </div>
+        </div>
+        <div class="menu-product-display">
+            <div class="title">Our Menu</div>
+            <div class="menu-container-box">
+               
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="mobileViewCartButton">
+        <div class="icon-subtotal">
+            <img src="cart icon.png" >
+            <div class="mobile-subTotal-category"> 
+            <!-- <div class="subTotal-items">4 Items</div>
+            <div class="dividr">|</div>
+            <div class="sub-total-price">₹123</div> -->
+            </div> 
+        </div> 
+        <button onclick="goToCheckoutPage()">View Cart</button>
+    </div>
+        
+        <div class="navbar">
+            <div class="homepage" onclick="goToHomePage()">
+                <img src="home.png" alt="">
+                <section>Home</section>
+            </div>
+            <div class="menu" onclick="goToMenuPage()">
+                <img src="selected menuTab.png" alt="">
+                <section style="color: #2b2b2b;">Menu</section>
+            </div>
+            <div class="search" onclick="goToSearchPage()">
+                <img src="searchTab.png" alt="">
+                <section>Search</section>
+            </div>
+            <div class="account" onclick="goToAccountPage()">
+                <img src="account.png" alt="">
+                <section>MyAcc</section>
+            </div>
+        </div>
+
+  
+    <script type="module" src="CartPage/Backend/menuBackendData.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>

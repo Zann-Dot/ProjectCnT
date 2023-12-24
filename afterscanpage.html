@@ -6,16 +6,15 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +28,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
 
+    
 </head>
 <body>
     <!-- <div id="loader-wrapper">
@@ -48,18 +48,18 @@
     
         <div class="container">
              <nav id="content">
-                 <div id="logo"></div>
+                 <div id="logo" onclick="goToHomePage()"></div>
                  <div class="offerButton">
                      <div class="offerdropdown">
-                         <button class="dropbtn" onclick="toggleDropdown(1)">Offers
-                             <img class="dekstopSwitchIcon" src="🦆 icon _nav arrow down_.svg" />
-                             
-                         </button>
-                         <div class="dropdown-content offerContent" id="myDropdown1">
-                             <a href="#">Offers</a>
-                             <a href="#" onclick="templatesVisibility()">Deals</a>
-                             <a href="#">Settings</a>
-                         </div>
+                        <button class="dropbtn" onclick="toggleDropdown(1)">Dine-In
+                            <img class="dekstopSwitchIcon" src="🦆 icon _nav arrow down_.svg" />
+                            
+                        </button>
+                        <div class="dropdown-content offerContent" id="myDropdown1">
+                            <a href="#">Delivery</a>
+                            <a href="#" onclick="">On The Go</a>
+                            <a href="#">Take Away</a>
+                        </div>
                      </div>
                  </div>
                  
@@ -101,16 +101,6 @@
                  <div class="region_detector">
                      <section>
                          <img src="🦆 icon _globe_.svg" alt="">
-                         <!-- <div class="region">Enter Your Region</div> -->
-                         <!-- <div class="region_dropdown">
-                             <button class="btn" id="nameChangeOnSelection" onclick="toggleDropdown(2)">Enter Your Region
-                                 <img src="🦆 icon _nav arrow down_black.svg" />
-                             </button>
-                             <div class="dropdown-content" id="myDropdown2">
-                                 <a href="#" id="changeButton" onclick="buttonNameChange()">West South</a>
-                                 <a href="#" id="changeText" onclick="buttonChange()">North East</a>
-                             </div>
-                         </div> -->
                          <div class="region_dropdown">
                              <button class="btn" id="nameChangeOnSelection" onclick="toggleDropdown(2)">Enter Your Region
                                  <img src="🦆 icon _nav arrow down_black.svg" />
@@ -126,145 +116,228 @@
                      
                      <p>Please enter your location we can search the ...</p>
                      <div class="hideOnDekstopMode">
+                        <div class="personal-address">
                          <div class="toolbar-Location">
                              <h4>Home</h4>
                              <article>Government Holkar Science College, AB Road, BhawarKuan, Indore - 452001</article>
                          </div>
+                         <div class="time-circle">
+                            <img src="time-circle.svg">
+                            <h4>Now</h4>
+                         </div>
+                        </div>
                          <div class="toolBar-divider"></div>
                          <div class="nearByRestoandTiming" onclick="openAddressFile()">
                              <h4>Select Restaurant Based on your Loaction</h4>
- 
+                             <img src="🦆 icon _nav arrow down_black.svg" />
                          </div>
                      </div>
                  </div>
              </nav>
              <div class="leftNavBarcontent">
                 <h4>|</h4>
-                <h4>Take Away</h4>
-                <h4>On The Go</h4>
-                <h4>Delivery</h4>
+                <h4>Offers</h4>
+                <h4 onclick="goToDealsPage()">Deals</h4>
+                <h4>Settings</h4>
                 <img src="search icon.png" alt="">
-             </div>
-             <div class="user_id">
-                 <div class="clickable-image" onclick="openHTMLFile()">
-                     <img src="profile.png" alt="Click to Open HTML File">
-                 </div>
-             </div>
+             
+                <div class="user_id">
+                    <div class="clickable-image" onclick="openHTMLFile()">
+                        <img src="profile.png" alt="Click to Open HTML File">
+                    </div>
+                </div>
+            </div>
          </div>
      </header>
+
+ 
  
  
      <div class="position">
          <div class="slideshow-container">
-             <div class="mySlides fade"> 
-                 <img src="banner 2.jpg" /></div>
-             <img class="mobileBanner" src="banner3.jpg" />
+            <div class="mySlides fade"> 
+                <img src="banner 2.jpg"/>
+            </div>
+             <img class="mobileBanner" src="Black Orange Modern Food Promotion Banner.png" />
              <div class="blackStrip_menuDivider"></div>
              
          </div>
  
  
-         <div class="menu_searchbar">
+         <div class="menu_searchbar" id="scrollTarget">
              <h3>Our Menu</h3>
-             <button class="deals" id="loadButton" onclick="templatesVisibility()"><img src="🦆 icon _trending up_.svg" >Deals</button>
-             <button class="popular" id="loadButton" onclick="templatesVisibility()"><img src="popular icon.png" >Popular</button>
-             <button class="newLaunch" id="loadButton" onclick="templatesVisibility()"><img src="new-launch.svg" >New Launch</button>
+             <button class="deals" id="loadButton" onclick=""><img src="🦆 icon _trending up_.svg" >Deals</button>
+             <button class="popular" id="loadButton" onclick=""><img src="popular icon.png" >Popular</button>
+             <button class="newLaunch" id="loadButton" onclick=""><img src="new-launch.svg" >New Launch</button>
 
-             <input class="search-bar" type="search" placeholder="Search Here">
+             <input class="search-bar" type="search" placeholder="Search Here" id="search-item">
              <img src="selected searchTab.png" class="searchIcon">
              
  
-         </div>
+        </div>
          
-         <div class="deals_and_placards">
+        <div class="deals_and_placards">
              <div class="deals">
-                 <div class="burgerMenu"><h3>Burgers and Wraps</h3></div>
-                 <div class="pizzaMenu"><h3>Pizza</h3></div>
-                 <div class="pastaMenu"><h3>Pasta</h3></div>
-                 <div class="sandwichMenu"><h3>Sandwiches</h3></div>
-                 <div class="friesAndSidesMenu"><h3>Fries & Sides</h3></div>
-                 <div class="japaneseMenu"><h3>Japanese</h3></div>
-                 <div class="mealForOneMenu"><h3>Meals For One</h3></div>
-                 <div class="coffeeAndBeverages"><h3>Coffee & Beverages (Hot & Cold)</h3></div>
-                 <div class="Desserts"><h3>Desserts</h3></div>
+                <div class="burgerMenu" onclick="moreOpen1()"><h3>Burgers and Wraps</h3></div>
+                <div class="pizzaMenu" onclick="moreOpen2()"><h3>Pizza</h3></div>
+                <div class="pastaMenu"onclick="moreOpen3()"><h3>Pasta</h3></div>
+                <div class="sandwichMenu"onclick="moreOpen4()"><h3>Sandwiches</h3></div>
+                <div class="friesAndSidesMenu"onclick="moreOpen5()"><h3>Fries & Sides</h3></div>
+                <div class="japaneseMenu"onclick="moreOpen6()"><h3>Japanese</h3></div>
+                <div class="mealForOneMenu"onclick="moreOpen7()"><h3>Meals For One</h3></div>
+                <div class="coffeeAndBeverages"onclick="moreOpen8()"><h3>Coffee & Beverages (Hot & Cold)</h3></div>
+                <div class="Desserts"onclick="moreOpen9()"><h3>Desserts</h3></div>
              </div>
-             <div class="placards">
-                 <div class="box1" onclick="">
-                     <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box2" onclick="">
-                     <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>   
-                 <div class="box3" onclick="">
-                     <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box4" onclick="">
-                     <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box5">
-                     <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box6"onclick="">
-                     <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box7">
-                     <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box8" onclick="">
-                     <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-                 <div class="box9">
-                     <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
-                 </div>
-             </div>
-             <div class="divider-ToMyCart"></div>
-             <div class="myCartArea">
-                 <div class="headings">
-                     <h5>Your Cart</h5>
-                     <h6>Clear All</h6>
-                 </div>
-                 <div class="cartView">
-                     <video autoplay loop muted>
-                         <source src="burger eye 4.mp4" type="video/mp4">
-                     </video>
-                     <h3>Oops!</h3>
-                     <h4>It Looks Like There is Something Missing!</h4>
-                 </div>
-                 <div class="viewCartButton">
-                     <img src="cart icon.png" >
-                     <!-- <div class="item" id="i101">Burger</div> -->
-                     <button onclick="goToPage2()">View Cart</button>
+            <div class="placardsAndViewCart">
+                    <div class="contentArea">
+                        <h4>Our Menu</h4>
+                        <div class="placards js-placards">
+                            <!-- <div class="box1" onclick="">
+                                <section>
+                                    <h3>Veggie Burger</h3>
+                                    <img src="rating-star.png" />4.2
+                                    <h2>₹119</h2>
+                                    <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
+                                </section>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="divider-ToMyCart"></div>
+                    <div class="myCartArea">
+                        <div class="headings">
+                            <h5>Your Cart</h5>
+                            <h6 class="js-delete-link">Clear All</h6>
+                        </div>
+                        <div class="cartView">
+                            <div class="js-cart-remove">
+                                <video autoplay loop muted>
+                                    <source src="burger eye 4.mp4" type="video/mp4">
+                                </video>
+                                <h3>Oops!</h3>
+                                <h4>It Looks Like There is Something Missing!</h4>
+                            </div>
+                            <div class="js-item-placings">
+                                
+                            </div>
 
-                 </div>
-             </div>
-         </div>
-     </div>
+                        </div>
+                        <div class="viewCartButton">
+                            <div class="icon-subtotal">
+                                <img src="cart icon.png" >
+                                <div class="subTotal-category"> 
+                                    
+                                </div> 
+                            </div>
+                             
+                            <button onclick="goToCheckoutPage()">View Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
      
+
+
      <div class="flyersslideshow">
-         
+            <div class="product-container">
+                
+            </div>
+
+            <div class="product-carousels">
+                <div class="flyers"><img src="flyer1.jpg" alt=""></div>
+                <div class="flyers"><img src="placard 2.jpg" alt=""></div>
+                <div class="flyers"><img src="flyer2.jpg" alt=""></div>
+                <div class="flyers"><img src="placard 1.jpg" alt=""></div>
+                <div class="flyers"><img src="flyer3.jpg" alt=""></div>
+                <div class="flyers"><img src="placard 4.jpg" alt=""></div>
+                <div class="flyers"><img src="placard 3.jpg" alt=""></div>
+                <div class="flyers"><img src="placard 6.jpg" alt=""></div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/burger wrap menu.png" alt="">
+                    <div class="title__">Burgers & Wraps</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/Pizza menu.png" alt="">
+                    <div class="title__">Pizza Mania</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/pasta menu.png" alt="">
+                    <div class="title__">Pasta</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/sandwich menu.png" alt="">
+                    <div class="title__">Sandwiches & Subs</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/japanese menu.png" alt="">
+                    <div class="title__">Japanese</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/meal menu2.png" alt="">
+                    <div class="title__">Meal For Double</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/beverages menu.png" alt="">
+                    <div class="title__">Beverages & Coffee</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/fries and sides.png" alt="">
+                    <div class="title__">Fries & Sides</div>
+                </div>
+                <div class="grid-items" onclick="goToMenuPage()">
+                    <img src="image/Flyers PNG/desserts menu.png" alt="">
+                    <div class="title__">Desserts</div>
+                </div>
+            </div>
+
+            <div class="ending-banner">
+                <img src="ending banner.jpg" alt="">
+            </div>
+
+            <div class="footer-mobile-view">
+                <img src="Free Junk Food Illustration-PNG.png" alt="">
+                <div class="ending-message">It seems like You have reached the End!</div>
+            </div>
      </div>
+     <div class="mobileViewCartButton">
+        <div class="icon-subtotal">
+            <img src="cart icon.png" >
+            <div class="mobile-subTotal-category"> 
+   
+            </div> 
+        </div>
+        <button onclick="goToCheckoutPage()">View Cart</button>
+    </div>
+
+
+
      <div class="navbar">
-         <div class="homepage">
-             <img src="home.png" alt="">
-             <section>Home</section>
+         <div class="homepage" onclick="goToHomePage()">
+             <img src="selected homeTab.png" alt="">
+             <section style="color: #2b2b2b;">Home</section>
          </div>
-         <div class="menu">
+         <div class="menu" onclick="goToMenuPage()">
              <img src="menu.png" alt="">
              <section>Menu</section>
          </div>
-         <div class="search">
+         <div class="search" onclick="goToSearchPage()">
              <img src="searchTab.png" alt="">
              <section>Search</section>
          </div>
-         <div class="account">
+         <div class="account" onclick="goToAccountPage()">
              <img src="account.png" alt="">
-             <section>My Account</section>
+             <section>MyAcc</section>
          </div>
      </div>
      
      <footer></footer>
-
-
+    
+    <script type="module" src="CartPage/HomepageContentData.js"></script>
+    <!-- <script type="module" src="contentdata.js"></script> -->
+    <script type="module" src="CartPage/Backend/mobileContentData.js"></script>
     <script src="homepage.js">
 
 </script>

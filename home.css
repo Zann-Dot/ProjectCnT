@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    width: 100vw;
 }
 body {
     margin: 0;
@@ -41,7 +40,7 @@ body {
     left: 33%;
     
     z-index: 1;
-    animation: loading 3s linear infinite; /* Adjust the animation duration as needed */
+    animation: loading 2s linear infinite; /* Adjust the animation duration as needed */
 }
 
 @keyframes loading {
@@ -116,8 +115,10 @@ header {
 }
 .container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 40px 0 0;
 }
 nav {
     display: flex;
@@ -138,6 +139,7 @@ nav {
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 .mobileTopButtons {
     display: none;
@@ -146,7 +148,7 @@ nav {
     width: 183px;
     height: 61px;
     border-radius: 10px;
-    background: #ff7d00;
+    background: #db0007;
     color: #FFF;
     text-align: center;
     font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;;
@@ -161,15 +163,19 @@ nav {
     
 }
 .offerButton button {
-    background-color: #ff7d00;
+    background-color: #db0007;
     color: white;
     border: none;
     font-family: speedee, 'Fira Sans', 'Poppins',  sans-serif;;
     font-size: 19px;
     margin: 0;
     padding-left: 15px;
+    cursor: pointer;
 }
 .offerButton .mobileSwitchIcon {
+    display: none;
+}
+.flyersslideshow {
     display: none;
 }
 .offerDropdown {
@@ -203,7 +209,7 @@ nav {
 .offerContent a:hover {
     background-color: #ffffff;
     border-radius: 18px;
-    color: rgb(255, 216, 158);
+    color: #db0007;
 }
 
 .show {
@@ -287,7 +293,7 @@ nav {
 
 .regionContent a:hover {
     background-color: #f1f1f1;
-    color: #838383;
+    color: #ef233c;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 }
@@ -334,29 +340,30 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
-    margin-left: 630px;
+    gap: 40px; 
 }
 .leftNavBarcontent img {
     height: 20px;
 }
 
-
-
-.user_id img {
-    margin-right: 25px;
+.leftNavBarcontent h4:hover {
+    color: rgb(141, 141, 141);
 }
 
-.user_id div {
+.leftNavBarcontent > .user_id img {
+    height: 25px;
+}
+
+.leftNavBarcontent .user_id div {
     
     color: white;
-    padding: 10px;
+    /* padding: 10px; */
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.user_id div img:hover {
+.leftNavBarcontent .user_id div img:hover {
     filter: brightness(0.9);
 }
 
@@ -364,7 +371,7 @@ nav {
     background: #252525;
 }
 div .mySlides img{
-    width: 100%;
+    width: 100vw;
 }
 .slideshow-container .mobileBanner {
     display: none;
@@ -381,7 +388,7 @@ div .mySlides img{
 .menu_searchbar {
     height: 168px;;
     background: #FBF6F0;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 15px 53.3px 0px rgba(62, 49, 34, 0.11);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 7px 13.3px 0px rgba(145, 85, 17, 0.11);
     
 }
 .menu_searchbar h3{
@@ -443,10 +450,10 @@ div .mySlides img{
     line-height: normal;
 }
 .menu_searchbar button {
-    transition: 0.05s ease;
+    transition: 0.1s ease;
 }
 .menu_searchbar button:hover {
-    background: #be3232;
+    background: #ef233c;
     color: #ffffff;
     font-size: 13px;
     transform: scale(1.1);
@@ -476,6 +483,7 @@ div .mySlides img{
     padding-left: 20px;
     margin-left: 1070px;
     font-size: 15px;
+    outline-style: none;
 }
 .menu_searchbar .searchIcon {
     height: 28px;
@@ -487,20 +495,20 @@ div .mySlides img{
 
 .deals_and_placards {
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
 }
 .deals_and_placards .deals{
-    width: 230px;
     height: 550px;
     border-radius: 7px;
     background: #FFF;
     color: #8D8D8D;
-    box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.08);
+    box-shadow: 0px 0px 8px 0px rgba(149, 157, 165, 0.349);
     margin-top: 13px;
-    padding: 20px 0 0 40px;
+    padding: 20px 170px 0 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+   
 }
 .burgerMenu {
     border: 0.2px solid #d3d3d3;
@@ -517,6 +525,7 @@ div .mySlides img{
     margin: 13px 0 10px 13px;
     font-family: speedee, 'Fira', sans-serif;
     font-size: 14px;
+    cursor: pointer;
 }
 .coffeeAndBeverages h3 {
     width: 130px;
@@ -598,75 +607,735 @@ div .mySlides img{
     background: url(desert\ menu.png);
     background-size: cover;
 }
-
-.placards {
-    width: 1075px;
-    height: 1128px;
-    /* background-color: #DD5252; */
-    margin-top: 85px;
+.contentArea h4 {
+    margin: 23px 0 30px 23px;
+    font-family: speedee, 'Fira', 'Poppins', sans-serif;
+    font-size: 26px;
+}
+.placardsAndViewCart {
     display: flex;
-    justify-content: space-evenly;
-    align-items:center;
+    flex-direction: row;
+
+}
+.placards {
+    /* width: 1080px; */
+    /* height: 1128px; */
+    /* background-color: #DD5252; */
+    margin-top: 5px;
+    margin-left: 20px;
+    /* display: grid; */
+    display: flex;
+    justify-content: start;
     flex-wrap: wrap;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 360px 360px 360px;
+    gap: 20px;
 }
 .placards div {
+    /* width: 17vmax;
+    height: 18vmax; */
     width: 342px;
     height: 356px;
     flex-shrink: 0;
     border-radius: 10px;
-    box-shadow: 0px 4px 50.3px 0px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
     background-color: white;
 }
-/* .placards .box1 {
-    background-image: url(\ 1.jpg);
-    background-size: cover;
+ .placards .box1 {
+    background-image: url('/image/Burger and wraps/Veggie Burger1.jpg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
+}
+
+.placards section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #707070;
+    backdrop-filter: blur(37px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.placards h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+.placards h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #2b2b2b;
+    margin-bottom: 5px;
+}
+.placards section img{
+    height: 12px;
 }
 .placards .box2 {
-    background-image: url(placard\ 2.jpg);
-    background-size: cover;
+    background-image: url('/image/Burger and wraps/Aloo\ Tikki\ Burger1.jpg');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
 }
+
 .placards .box3 {
-    background-image: url(placard\ 3.jpg);
-    background-size: cover;
+    background-image: url('/image/Burger and wraps/Chicken\ Burger1.jpg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
 }
+
 .placards .box4 {
-    background-image: url(placard\ 4.jpg);
-    background-size: cover;
+    background-image: url('/image/Burger and wraps/chessy\ Paneer\ Burger1.jpg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
 }
+
 .placards .box5 {
-    background-image: url(placard\ 9.jpg);
-    background-size: cover;
+    background-image: url('/image/Burger and wraps/Mexican\ Bunger1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
 }
+
 .placards .box6 {
-    background-image: url(placard\ 6.jpg);
-    background-size: cover;
+    background-image: url('/image/Burger and wraps/veg wrap.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
+}
+.box6 section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #5c5c5c;
+}
+.box6 h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+}
+.box6 h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+}
+.box6 section img{
+    height: 12px;
 }
 .placards .box7 {
-    background-image: url(placard\ 7.jpg);
+    background-image: url('/image/Burger and wraps/bbq chichken\ wrap.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+}
+.box7 section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #cfcfcf;
+}
+.box7 h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.box7 h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+}
+.box7 section img{
+    height: 12px;
 }
 .placards .box8 {
-    background-image: url(placard\ 5.jpg);
-    background-size: cover;
+    background-image: url('/image/Burger and wraps/paneer wrap.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
+}
+.box8 section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #4d4d4d;
+}
+.box8 h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+}
+.box8 h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+}
+.box8 section img{
+    height: 12px;
 }
 .placards .box9 {
-    background-image: url(placard\ 8.jpg);
+    background-image: url('/image/Burger and wraps/super bullger.jpg');
     background-size: cover;
-} */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px; 
+} 
+.box9 section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #e0e0e0;
+}
+.box9 h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.box9 h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 1);
+}
 
+.box9 section img{
+    height: 12px;
+}
+
+/* Pizza CSS */
+.placards .box10 {
+    background-image: url('/image/Pizza/mushroom pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -120px ;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+    /* gap: 10px; */
+    
+}
+.placards .box11 {
+    background-image: url('/image/Pizza/paneer corn and capsicum pizza.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -5px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box12 {
+    background-image: url('/image/Pizza/veggie pizza.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box13 {
+    background-image: url('/image/Pizza/margherita pizza.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-y: -2px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box14 {
+    background-image: url('/image/Pizza/onion pepprikca pizza.jpg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box15 {
+    background-image: url('/image/Pasta/white\ sauce\ pasta.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box16 {
+    background-image: url('/image//Pasta/red-pepper-pasta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -60px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box17 {
+    background-image: url('image/Pasta/Mac\ n\ Cheese.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -60px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box18 {
+    background-image: url('image/Pasta/Vegan\ Pasta.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box19 {
+    background-image: url('image//sandwich/Veggie\ Toast.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: -40px;
+    background-position-y: 1px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box20 {
+    background-image: url('image//sandwich/Grilled\ Cheese\ sandwich.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: -35px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box21 {
+    background-image: url('image//sandwich/brunch\ sandwich.webp');
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: -6px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box22 {
+    background-image: url('image//sandwich/Italian\ Hero\ Sub.jpg');
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: -6px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box23 {
+    background-image: url('image//sandwich/Tandorie\ Chicken\ sub.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -90px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box24 {
+    background-image: url('image//sandwich/Grilled\ Chicken\ Sandwich.webp');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 30px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+
+.placards .box25 {
+    background-image: url('image/friesANdsides/cheesy\ fries.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 1px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box26 {
+    background-image: url('image/friesANdsides/peri\ peri\ fries.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -70px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box27 {
+    background-image: url('image/friesANdsides/salted\ Fries.webp');
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: -6px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box28 {
+    background-image: url('image/friesANdsides/cheese\ pull\ apart\ garlic\ bread.jpg');
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: -6px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box29 {
+    background-image: url('image/friesANdsides/garlic\ bread.webp');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: -10px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box30 {
+    background-image: url('image/friesANdsides/Chickpee\ Guacaomoli\ Taco.webp');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 30px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box31 {
+    background-image: url('image/friesANdsides/chicken\ taco.jpg');
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box32 {
+    background-image: url('image/friesANdsides/potato\ shots.jpg');
+    background-size: 117%;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box33 {
+    background-image: url('image/friesANdsides/Chicken\ nuggets.jpg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: 30px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box34 {
+    background-image: url('image/friesANdsides/loaded\ nachos.jpg');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -30px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box35 {
+    background-image: url('image/friesANdsides/jalepeno\ dip.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -40px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.box35 section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #eeeeee;
+}
+.box35 h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+.box35 h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    /* text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5); */
+}
+.box35 section img{
+    height: 12px;
+}
+.placards .box36 {
+    background-image: url('image/friesANdsides/cheese\ dip.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -100px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.box36 section{
+    font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #eeeeee;
+}
+.box36 h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+.box36 h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    /* text-shadow: 1px 0 10px rgb(0, 0, 0, 0.5); */
+}
+.box36 section img{
+    height: 12px;
+}
+.placards .box37 {
+    background-image: url('image/Beverages/cappuccino.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -70px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box38 {
+    background-image: url('image/Beverages/hot\ coffee.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box39 {
+    background-image: url('image/Beverages/cold\ coffee\ with\ ice\ cream.avif');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box40 {
+    background-image: url('image/Beverages/strawberry\ mojito.webp');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: 30px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box41 {
+    background-image: url('image/Beverages/lime\ mojito.webp');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 70px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box42 {
+    background-image: url('image/Beverages/blueberry\ mojito.webp');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 70px;
+    background-position-y: -20px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box43 {
+    background-image: url('image/Beverages/chocolate\ shake.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: -40px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box44 {
+    background-image: url('image/Beverages/blueberry\ smoothie.webp');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: -50px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box45 {
+    background-image: url('image/Beverages/strawberry\ shake.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: 55px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box46 {
+    background-image: url('image/Beverages/cola.jpg');
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box47 {
+    background-image: url('image/Beverages/fanta.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 15px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+
+.placards .box48 {
+    background-image: url('image/Beverages/sprite2.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: -130px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box49 {
+    background-image: url('image/Desserts/choco\ lava.webp');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box50 {
+    background-image: url('image/Desserts/brownie.jpeg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: 0px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
+.placards .box51 {
+    background-image: url('image/Desserts/red\ velvet\ cheese\ cake.jpg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: -130px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: end;
+}
 .placards .addToCartButton {
     width: 285px;
-    height: 41px;
-    border-radius: 7px;
+    height: 30px;
+    border-radius: 5px;
     background: #FBB900;
-    font-family: speedee, 'Fira', sans-serif;
-    position: relative;
-    top: 288px;
-    left: 28.5px;
+    font-family: speedee, 'Fira', 'Poppins', sans-serif;
+    /* position: relative; */
+    /* top: 288px; */
+    /* left: 28.5px; */
     text-align: center;
-    padding-top: 10px;
-    font-size: 23px;
+    padding-top: 8px;
+    font-size: 17px;
+    margin-bottom: 15px;   
+    color: #2B2B2B;  
+    cursor: pointer;
 }
 .addToCartButton img {
     margin: 0 0 1px 5px;
@@ -685,8 +1354,8 @@ div .mySlides img{
 }
 .divider-ToMyCart {
     width: 2px;
-    height: 130vh;
-    background: rgba(208, 193, 177, 0.44);
+    height: 100%;
+    background: rgba(189, 175, 161, 0.44);
     margin-top: 34px;
     margin-left: 20px;
 }
@@ -694,6 +1363,8 @@ div .mySlides img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 80px;
 }
 .headings h5 {
     color: #252525;
@@ -704,6 +1375,7 @@ div .mySlides img{
     line-height: normal;
     margin-bottom: 18px;
     margin-top: 45px;
+    
 }
 .headings h6 {
         color: #D90108;
@@ -713,20 +1385,116 @@ div .mySlides img{
     font-weight: 700;
     line-height: normal;
     text-decoration-line: underline;
-    margin-bottom: 10px;
+    margin: 40px 25px 10px 0;
+    
 }
 .myCartArea .cartView{
-    width: 443px;
-    height: 500px;
+    width: 370px;
+    height: 400px;
     flex-shrink: 0; 
-    border-radius: 15px;
+    border-radius: 10px;
     background: #fff;
-    box-shadow: 0px 4px 50.3px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.04);
     /* margin-top: 120px; */
+    
 }
-.cartView video {
-    width: 289px;
-    height: 296px;
+.css-cart-list {
+    padding: 20px 0 0 20px;
+    display: grid;
+    grid-template-columns: 70px 170px 100px;
+}
+
+
+.cart-item1 .item-image {
+    height: 70px;
+    width: 90px;
+    background-image: url(Veggie\ Burger.jpg);
+    background-size: cover;
+}
+.cart-item2 .item-image {
+    height: 70px;
+    width: 70px;
+    background-image: url(Aloo\ Tikki\ Burger.jpg);
+    background-size: cover;
+    margin-left: 12px;
+}
+.cart-item3 .item-image {
+    height: 70px;
+    width: 70px;
+    background-image: url(Chicken\ Burger.jpg);
+    background-size: cover;
+    margin-left: 12px;
+}
+.cart-info .item-image img{
+    height: 70px;
+    width: 70px;
+    margin: 12px;
+    border-radius: 40px;
+}
+
+.cartView h4{
+    margin: 0 0 20px 30px;
+    font-size: 14px;
+    text-align: left;
+}
+.cartView h2{
+    margin: 0 0 0 30px;
+    font-size: 18px;
+    text-align: left;
+}
+ .item-info {
+    width: 170px;
+    padding-top: 15px;
+}
+
+ .quantityChangingButton {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 40px;
+    gap: 10px;
+}
+.quantityChangingButton .minus {
+    height: 30px;
+    width: 30px;
+    background-color: #e3d1bd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.quantityChangingButton .minus img {
+    padding-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.quantityChangingButton .plus {
+    height: 30px;
+    width: 30px;
+    background-color: #ffbc0b;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.quantityChangingButton .plus img {
+    padding-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.quantityChangingButton {
+    font-size: 20px;
+}
+
+
+
+
+
+.myCartArea {
+    margin-left: 40px;   
+}
+.js-cart-remove {
+    display: block;
+}
+.cartView .js-cart-remove video {
+    width: 189px;
+    height: 196px;
     position: relative;
     top: 50px;
 
@@ -735,51 +1503,95 @@ div .mySlides img{
 .cartView {
     text-align: center;
     color: #2B2B2B;
-    font-family: Speedee, 'Fira', sans-serif;
+    font-family: Speedee, 'Fira', 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: sticky;
+    top: 180px;
+    padding: 0 10px 0 0;
+    overflow: auto;
 }
-.cartView h3 {
+.cartView::-webkit-scrollbar{
+    width: 0;
+}
+.cartView .js-cart-remove h3 {
     font-size: 32px;
     margin: 0;
     position: relative;
     z-index: 2;
     bottom: 25px;
-    
+    margin-top: 30px;
 }
-.cartView h4 {
+.cartView .js-cart-remove h4 {
     font-size: 20px;
     margin: 0;
     position: relative;
     z-index: 2;
     bottom: 12px;
+    text-align: center;
 }
 .viewCartButton {
     display: flex;
     justify-content: space-between;
-    width: 443px;
-    height: 62px;   
-    border-radius: 19px;
+    align-items: center;
+    width: 380px;
+    height: 52px;   
+    border-radius: 10px;
     background: #FBB900;
     margin-top: 20px;
+    margin-right: 20px;
+    position: sticky;
+    top: 600px;
 }
 .viewCartButton img {
-    height: 32px;
-    margin: 16px 0 0 20px;
+    height: 30px;
+    margin: 0px 0 0 20px;
+}
+.icon-subtotal {
+    display: flex;
+    flex-direction: row;
+}
+.subTotal-category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    visibility: hidden;
+    
+}
+.viewCartButton div{
+    color: #2B2B2B;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: normal;
+    margin-left: 10px;
+}
+.viewCartButton .dividr {
+    margin-bottom: 4px;
 }
 .viewCartButton button {
     border: none;
     border-radius: 19px;
     padding: 0 20px 0 0;
+    /* margin-left: 110px; */
     background-color: #FBB900;
     color: #2B2B2B;
     font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
+    
 }
+.mobileViewCartButton {
+    visibility: hidden;
+}
+
+
+
+
 @media (width < 800px) {
     #logo {
         display: none;
@@ -802,6 +1614,10 @@ div .mySlides img{
     }
     .container {
         display: block;
+        padding: 0 0px 0 0;
+    }
+    .flyersslideshow {
+        display: initial;
     }
     nav  {
         flex-direction: column;
@@ -839,7 +1655,7 @@ div .mySlides img{
         height: 1px;
         width: 98%;
         background-color: #c4a88c;
-        margin: 8px 0;
+        margin: 1px 0;
     }
     .region_detector .toolbar-Location {
         font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
@@ -849,19 +1665,31 @@ div .mySlides img{
         margin: 0 0 5px 0;
         font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
         padding-left: 10px;
-        padding-top: 20px;
+        padding-top: 0px;
         font-size: 18px;
     }
     .toolbar-Location article {
         font-family:   'Rubik','Poppins','Fira Sans', sans-serif;
         font-size: 14px ;
         padding-left: 10px;
+        padding-bottom: 10px;
     }
      .nearByRestoandTiming h4{
         font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
-        margin-top: 10px;
-        padding:0 0 10px 10px;
+        /* margin-top: 10px; */
+        margin: 0;
+        /* padding:0 0 10px 10px; */
         font-size: 14px;
+    }
+    .nearByRestoandTiming {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 7px;
+    }
+    .nearByRestoandTiming img {
+        height: 7px;
     }
     .myCartArea {
         display: none;
@@ -877,6 +1705,7 @@ div .mySlides img{
         bottom: 0;
         left: 0;
         right: 0;
+        z-index: 50;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -901,10 +1730,7 @@ div .mySlides img{
     }
 
     .slideshow-container img {
-         width: 70%;
-         position: relative;
-         left: 16vw;
-         top: 10vw;
+         width: 100%;
          z-index: 0;
          
     }
@@ -918,6 +1744,7 @@ div .mySlides img{
         display: none;
     }
     .slideshow-container {
+        padding: 30px 20px 0 20px;
         background: #FBF6F0;
     }
     .merge .offer {
@@ -986,7 +1813,7 @@ div .mySlides img{
     }
     .menu_searchbar {
         position: relative;
-        top: 100px;
+        top: 0px;
     }
     .menu_searchbar h3 {
         padding: 35px 0 0 35px;
@@ -999,6 +1826,268 @@ div .mySlides img{
     }
     .region_detector  .hideOnDekstopMode {
         display:inline-block;
+    }
+    .region_detector .personal-address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 15px ;
+    }
+    .personal-address .time-circle {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding-top: 20px;
+    }
+    .personal-address .time-circle img{
+        height: 17px;
+    }
+    .personal-address .time-circle h4 {
+        margin: 0;
+        font-family:speedee, 'Fira Sans', 'Poppins',  sans-serif ;
+        font-size: 12px;
+        color: #2b2b2b;
+    }
+    .flyersslideshow .product-container {
+        max-height: 330px;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 0 0 0 20px;
+        margin: 0 0 30px 0;
+    }
+    .flyersslideshow .product-container::-webkit-scrollbar {
+        width: 0;
+    }
+    .flyersslideshow .product-container .item{
+        position: relative;
+        bottom: 80px;
+        min-width: 200px;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+        padding: 90px 20px 20px 20px;
+        font-family: 'Noto sans', sans-serif ;
+        font-size: 18px;
+    }
+    .product-container .container {
+        max-height: 290px;
+    }
+    .product-container .container .flyer-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        /* box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.1); */
+        box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff;
+        position: relative;
+        left: 50px;
+        z-index: 2;
+    }
+    .product-container .item .product-info-in-product-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+    .product-container .item .product-info-in-product-container .add-button {
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background-color: #ffbc0b;
+        margin-left: 0px;
+    }
+    .product-container .item .product-info-in-product-container .add-button img {
+        padding-top: 7px;
+    }
+    .product-info-in-product-container .quantityButton {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin-left: 130px;
+    }
+    .product-info-in-product-container .quantityButton .minus{
+            height: 30px;
+            width: 30px;
+            background-color: #e3d1bd;
+            border-radius: 10px;
+            cursor: pointer;
+    }
+    .product-info-in-product-container .quantityButton .minus img {
+        padding-top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .product-carousels {
+        max-height: 340px;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 0 0 0 20px;
+        /* margin: 0 0 100px 0; */
+    }
+    .product-carousels .flyers {
+        min-width: 320px;
+        height: 320px;
+        background-color: #fff;
+        text-align: center;
+    }
+    .flyersslideshow .product-carousels::-webkit-scrollbar {
+        width: 0;
+    }
+    .product-carousels .flyers img {
+        height: 320px;
+    }
+    .mobileViewCartButton {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 62px;   
+        box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.1);
+        background: #FBB900;
+        margin-top: 20px;
+        margin-right: 20px;
+        position: fixed;
+        bottom: 0;
+        z-index: 4;
+        margin-bottom: 60px;
+    }
+    .mobileViewCartButton img {
+        height: 32px;
+        margin: 0px 0 0 20px;
+    }
+    .icon-subtotal {
+        display: flex;
+        flex-direction: row;
+    }
+    .mobileViewCartButton .mobile-subTotal-category {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        visibility: hidden;
+        
+    }
+    .mobileViewCartButton div{
+        color: #2B2B2B;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        line-height: normal;
+        margin-left: 10px;
+    }
+    .mobileViewCartButton .dividr {
+        margin-bottom: 4px;
+    }
+    .mobileViewCartButton button {
+        border: none;
+        border-radius: 19px;
+        padding: 0 20px 0 0;
+        /* margin-left: 110px; */
+        background-color: #FBB900;
+        color: #2B2B2B;
+        font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+    }
+    .grid-container {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(55px,auto);
+        row-gap: 5px;
+        column-gap: 5px;
+        
+    }
+    .grid-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+        padding-bottom: 20px;
+        font-family: Speedee, 'Fira Sans', 'Poppins',  sans-serif;
+        
+    }
+    .grid-items:nth-child(1) {
+        background-color: #fff8e6;
+        border: 2px solid #e0d6b8;
+        border-radius: 10px;
+        grid-column: 1/7;
+        grid-row: 1/6;
+        font-size: 22px;
+    }
+    .grid-items:nth-child(1) img{
+        height: 200px;
+    }
+    .grid-items:nth-child(2) {
+        background-color: #fff8e6;
+        border: 2px solid #e0d6b8;
+        border-radius: 10px;
+        grid-column: 1/4;
+        grid-row: 6/9;
+        font-size: 16px;
+    }
+    .grid-items:nth-child(2) img{
+        height: 90px;
+    }
+    .grid-items:nth-child(3) {
+        background-color: #fff8e6;
+        border: 2px solid #e0d6b8;
+        border-radius: 10px;
+        grid-column: 4/7;
+        grid-row: 6/9;
+        font-size: 16px;
+    }
+    .grid-items:nth-child(3) img{
+        height: 80px;
+    }
+    .grid-items:nth-child(n+4) {
+        background-color: #fff8e6;
+        border: 2px solid #e0d6b8;
+        border-radius: 10px;
+        grid-column: span 2;
+        grid-row: span 2;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 5px 10px 5px;
+    }
+    .grid-items:nth-child(n+4) img{
+        height: 50px;
+    }
+    .flyersslideshow .ending-banner {
+        padding: 40px;
+    }
+    .flyersslideshow .ending-banner img{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .footer-mobile-view {
+        height: 350px;
+        background-color: #faedcd;
+        padding:20px 130px 0;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        color: #8a8371;
+        font-weight: 100;
+    }
+    .footer-mobile-view img {
+        width: 100%;
+
     }
 }
 

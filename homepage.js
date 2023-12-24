@@ -9,6 +9,18 @@
 //         loaderWrapper.style.display = 'flex';
 //     }
 // };
+window.onload = function () {
+    // Get the target element by ID
+    var scrollTarget = document.getElementById('scrollTarget');
+
+    // Scroll to the top of the target element
+    if (scrollTarget) {
+        scrollTarget.scrollIntoView();
+    }
+};
+
+
+
 document.onreadystatechange = function () {
     var loaderWrapper = document.getElementById('loader-wrapper');
 
@@ -24,11 +36,20 @@ document.onreadystatechange = function () {
 
 
 
+
+function goToDealsPage() {
+    window.location.href = 'CNT 1st.html';
+}
+
+
+
+
+
 function toggleDropdown(index) {
-    var dropdownContent = document.getElementById('myDropdown' + index);
+    let dropdownContent = document.getElementById('myDropdown' + index);
 
     // Close all dropdowns
-    var allDropdowns = document.querySelectorAll('.dropdown-content');
+    let allDropdowns = document.querySelectorAll('.dropdown-content');
     allDropdowns.forEach(function(content) {
         content.classList.remove('show');
     });
@@ -39,7 +60,7 @@ function toggleDropdown(index) {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-    var dropdownContents = document.querySelectorAll('.dropdown-content');
+    let dropdownContents = document.querySelectorAll('.dropdown-content');
 
     // Close all dropdowns except the one clicked
     dropdownContents.forEach(function(content) {
@@ -108,15 +129,13 @@ let initialImageSources = {};
         window.location.href = 'viewCartPage.html?value=' + encodedValue;
     }
 
-  
 
-
-    
 
 
 function openHTMLFile() {
         // Change "your-html-file.html" to the actual path of your HTML file
-        window.location.href = "example.html";
+        window.location.href = 'http://localhost/signup/signup1.html';
+        
     }
 
 function openAddressFile(){
@@ -158,89 +177,103 @@ function openRedeemPage() {
     }
 
 
-   
+    
 
-
-
-
-
-    var cart = [];
-
-    function addToCart(id, name, price) {
-        cart.push({ id: id, name: name, price: price });
-        updateCart();
+    
+    
+    
+    
+    document.addEventListener('DOMContentLoaded', function openmore() {
+        // Wait for the DOM to be fully loaded before interacting with it
+    
+        // Fetch elements with the class name 'example-class'
+        var elements = document.getElementsByClassName('placards');
+    
+        // Iterate through the elements and log their content
+        for (var i = 0; i < elements.length; i++) {
+            console.log(elements[i].textContent);
+        }
+    });
+    function moreOpen1(){
+        window.location.href="Burger Menu.html";
+    }
+    function moreOpen2(){
+        window.location.href="Pizza Menu.html";
+    }
+    function moreOpen3(){
+        window.location.href="Pasta-Menu.html";
+    }
+    function moreOpen4(){
+        window.location.href="Sandwich-Menu.html";
+    }
+    function moreOpen5(){
+        window.location.href="Fries&Sides-Menu.html";
+    }
+    function moreOpen6(){
+        window.location.href="Japanese-Menu.html";
+    }
+    function moreOpen7(){
+        window.location.href="Meal For One.html";
+    }
+    function moreOpen8(){
+        window.location.href="Coffee&Beverages-Menu.html";
+    }
+    function moreOpen9(){
+        window.location.href="Desserts-Menu.html";
     }
 
-    function updateCart() {
-        var cartItems = document.getElementById('cart-items');
-        var cartTotal = document.getElementById('cart-total');
-        var total = 0;
 
-        // Clear previous items
-        cartItems.innerHTML = '';
-
-        // Update cart items
-        cart.forEach(function (item) {
-            var cartItem = document.createElement('div');
-            cartItem.className = 'cart-item';
-            cartItem.innerHTML = `
-                <span>${item.name}</span>
-                <span>$${item.price.toFixed(2)}</span>
-            `;
-            cartItems.appendChild(cartItem);
-
-            total += item.price;
-        });
-
-        // Update total
-        cartTotal.textContent = 'Total: $' + total.toFixed(2);
+function goToHomePage() {
+    window.location.href = 'afterscanpage.html';
     }
-       
+function goToHomePageFromCheckout() {
+        window.location.href = '../afterscanpage.html';
+}
+function goToCheckoutPage() {
+    window.location.href = 'CartPage/checkout.html';
+}
+function goToMenuPage() {
+    window.location.href = '../MobileMenuPage.html';
+}
+// function goToMenuPage() {
+//     window.location.href = '../MobileMenuPage.html';
+// }
+function goToSearchPage() {
+    window.location.href = 'search.html';
+}
+function goToAccountPage() {
+    window.location.href = 'Myaccount.html';
+}
 
 
-    var cart = [];
+let input = document.querySelector('#search-item'); 
+input.addEventListener('keyup', (e) => {
+    search();
+});
+const search = () => {
+    const searchBox = document.getElementById("search-item").value.toUpperCase();
+    const storeitems = document.getElementsByClassName('.js-placards');
+    const product = document.querySelectorAll('.js-item');
+    const pName = document.getElementsByTagName("h3");
 
-    function addToCart(id, name, price) {
-        cart.push({ id: id, name: name, price: price });
-        updateCart();
+    for (let i = 0; i < pName.length; i++) {
+        let match = product[i];
+
+        if (match) {
+                let textValue = match.textContent || match.innerHTML;
+                if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+                    product[i].style.display = "";
+                    
+                } else {
+                    product[i].style.display = "none";
+                    
+                }
+        }
+        
     }
+    
+};
 
-    function removeFromCart(index) {
-        // Remove the item at the specified index from the cart array
-        cart.splice(index, 1);
-        updateCart();
-    }
-
-    function updateCart() {
-        var cartItems = document.getElementById('cart-items');
-        var cartTotal = document.getElementById('cart-total');
-        var total = 0;
-
-        // Clear previous items
-        cartItems.innerHTML = '';
-
-        // Update cart items
-        cart.forEach(function (item, index) {
-            var cartItem = document.createElement('div');
-            cartItem.className = 'cart-item';
-            cartItem.innerHTML = `
-                <span>${item.name}</span>
-                <span>$${item.price.toFixed(2)}</span>
-                <button class="btn" onclick="removeFromCart(${index})">Remove</button>
-            `;
-            cartItems.appendChild(cartItem);
-
-            total += item.price;
-        });
-
-        // Update total
-        cartTotal.textContent = 'Total: $' + total.toFixed(2);
-    }
-
-    function checkout() {
-        alert('Thank you for your order!');
-        // You can implement further actions like sending the order to a server/database
-        // and resetting the cart.
-        cart = [];
-        updateCart();
-    }
+function goToPay() {
+    window.location.href = '../../payment portal/paycnt.html';
+}

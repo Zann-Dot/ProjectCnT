@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader-wrapper">
+        
+        <div class="loader-section">
+            <video id="loader" autoplay loop muted>
+            <source src="burger eye 4.mp4" type="video/mp4">
+            <!-- Your browser does not support the video tag. -->
+        </video></div>
+        <div class="linear-loader"></div>
+    </div>
+
+    
+    <header>
+        <div class="header-title">
+            <h3>Search Menu</h3>
+        </div>
+        <div class="header-searchbar">
+            <div class="input-container">
+                <input type="search" placeholder="Search here" id="search-item" onkeyup="">
+                <img src="selected searchTab.png" class="searchIcon">
+            </div>
+        </div>
+        <div class="header-category-button">
+            <button>Veg</button>
+            <button>Non-Veg</button>
+        </div>
+    </header>
+    <span class="back-button" onclick="goToMenuPage()">
+        <img src="arrow-left-primary.svg">
+        <h4>Back</h4>
+    </span>
+
+    <div class="main-body">
+        <div class="product-container">
+        
+        </div>
+    </div>
+    <div class="mobileViewCartButton">
+        <div class="icon-subtotal">
+            <img src="cart icon.png" >
+            <div class="mobile-subTotal-category"> 
+            <!-- <div class="subTotal-items">4 Items</div>
+            <div class="dividr">|</div>
+            <div class="sub-total-price">₹123</div> -->
+            </div> 
+        </div>
+         
+        <button onclick="goToCheckoutPage()">View Cart</button>
+    </div>
+    <div class="navbar">
+        <div class="homepage" onclick="goToHomePage()">
+            <img src="home.png" alt="">
+            <section>Home</section>
+        </div>
+        <div class="menu" onclick="goToMenuPage()">
+            <img src="menu.png" alt="">
+            <section >Menu</section>
+        </div>
+        <div class="search" onclick="goToSearchPage()">
+            <img src="selected searchTab.png" alt="">
+            <section style="color: #2b2b2b;">Search</section>
+        </div>
+        <div class="account" onclick="goToAccountPage()">
+            <img src="account.png" alt="">
+            <section>MyAcc</section>
+        </div>
+    </div>
+
+
+    <script type="module" src="search.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>
