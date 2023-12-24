@@ -1,0 +1,82 @@
+[
+    {
+        "id": "12345kux-34l5tl",
+        "name": "Cappuccino",
+        "image":"image/image/Beverages/cappuccino.webp",
+        "price":149
+    },
+
+    {
+        "id": "12errkux-5ull5t2",
+        "name": " Hot Coffee",
+        "image":"image/image/Beverages/hot coffee.webp",
+        "price":119
+    },
+
+    {
+        "id": "12345kux-5tyyl5t3",
+        "name": "Cold coffee",
+        "image":"image/image/Beverages/cold coffee with ice cream.avif",
+        "price":159
+    },
+    {
+        "id": "12345nkx-5vgll5t4",
+        "name": "Straberry Mojite",
+        "image":"image/image/Beverages/strawberry mojito.webp",
+        "price":139
+    },
+    {
+        "id": "1aw45kux-5ull5t5",
+        "name": "Lime Mojite",
+        "image":"image/image/Beverages/lime mojito.webp",
+        "price":139
+    },
+    {
+        "id": "12345kux-5rtl5t6",
+        "name": "Blueberry Mojite",
+        "image":"image/image/Beverages/blueberry mojito.webp",
+        "price":139
+    },
+    {
+        "id": "12ytykux-asstl5t6",
+        "name": "Chocolate Smoothie",
+        "image":"image/image/Beverages/chocolate smoothie.jpg",
+        "price":189
+    },
+
+    {
+        "id": "12kik5kux-asstl5t6",
+        "name": "Blueberry Smoothie",
+        "image":"image/image/Beverages/blueberry smoothie.webp",
+        "price":199
+    },
+    {
+        "id": "12kik5ff-asstl5t6",
+        "name": "Strawberry Smoothie",
+        "image":"image/image/Beverages/strawberry shake.jpg",
+        "price":189
+    },
+    {
+        "id": "12fgfkux-aaerft5t6",
+        "name": "Cola",
+        "image":"image/image/Beverages/cola.jpg",
+        "price":69
+    },
+   
+    {
+        "id": "12fgfkux-asstl5t6",
+        "name": "fanta",
+        "image":"image/image/Beverages/fanta.png",
+        "price":69
+    },
+    {
+        "id": "12fgfkux-atrt5t6",
+        "name": "Sprite",
+        "image":"image/image/Beverages/sprite2.png",
+        "price":69
+    }
+   
+    
+
+    
+]

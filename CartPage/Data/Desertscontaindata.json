@@ -1,0 +1,23 @@
+[
+    {
+        "id": "12678h-jjjjjk",
+        "name": "Choco Lava",
+        "image":"image/image/Desserts/choco lava.webp",
+        "price":149
+    },
+
+    {
+        "id": "12345kux-5udd5t2",
+        "name": "Brownie",
+        "image":"image/image/Desserts/brownie.jpeg",
+        "price":179
+    },
+
+    {
+        "id": "12345kux-5errt3",
+        "name": "Red Velvet Cheese Cake",
+        "image":"image/image/Desserts/red velvet cheese cake.jpg",
+        "price":189
+    }
+      
+]

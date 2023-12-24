@@ -1,0 +1,23 @@
+[
+    {
+        "id": "12bhhux-5ull5tl",
+        "name": "Sushi",
+        "image":"image/image/Japanese/sushi.jpg",
+        "price":549
+    },
+
+    {
+        "id": "12345kux-uyyut2",
+        "name": "Dumplings",
+        "image":"image/image/Japanese/Dumplings.jpg",
+        "price":229
+    },
+
+    {
+        "id": "123kjhx-5ull5t3",
+        "name": "Ramen",
+        "image":"image/image/Japanese/sushi.jpg",
+        "price":429
+    }
+    
+]

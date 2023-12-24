@@ -1,0 +1,31 @@
+[
+    {
+        "id": "12345kux-ertl5tl",
+        "name": "Regular Meal",
+        "image":"image/image/Meal for one/Regular Meal.png",
+        "price":149
+    },
+
+    {
+        "id": "12345kux-5ulnkkk2",
+        "name": "Medium Meal",
+        "image":"image/image/Meal for one/Medium Meal.webp",
+        "price":179
+    },
+
+    {
+        "id": "12345kux-yttl5t3",
+        "name": "Large Meal",
+        "image":"image/image/Meal for one/Large meal.jpg",
+        "price":229
+    },
+    {
+        "id": "12bhkux-5ullde",
+        "name": "Jain Meal",
+        "image":"image/image/Meal for one/jain meal.jpg",
+        "price":189
+    }
+    
+
+    
+]

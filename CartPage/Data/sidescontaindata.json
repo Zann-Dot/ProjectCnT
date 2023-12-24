@@ -1,0 +1,78 @@
+[
+    {
+        "id": "12345kux-vfrl5tl",
+        "name": "Chessy Fries",
+        "image":"image/image/friesANdsides/cheesy fries.webp",
+        "price":149
+    },
+
+    {
+        "id": "123bjkkx-5ull5t2",
+        "name": "Peri Peri Fries",
+        "image":"image/image/friesANdsides/peri peri fries.jpeg",
+        "price":129
+    },
+
+    {
+        "id": "123bhjux-5kiol5t3",
+        "name": "Salted Fries",
+        "image":"image/image/friesANdsides/salted Fries.webp",
+        "price":109
+    },
+    {
+        "id": "12345kux-5skkd5t4",
+        "name": "Cheese Pull Apart Garlic Bread",
+        "image":"image/image/friesANdsides/cheese pull apart garlic bread.jpg",
+        "price":209
+    },
+     {
+        "id": "123cffux-5ull5t5",
+        "name": "Garlic Bread",
+        "image":"image/image/friesANdsides/garlic bread.webp",
+        "price":139
+    },
+    {
+        "id": "123cffux-kjull5t5",
+        "name": "Chickpea Guacamoli Taco",
+        "image":"image/image/friesANdsides/Chickpee Guacaomoli Taco.webp",
+        "price":179
+    },
+    {
+        "id": "12jkjfux-iuiokpt5",
+        "name": "Chicken Taco",
+        "image":"image/image/friesANdsides/chicken taco.jpg",
+        "price":139
+    },
+    {
+        "id": "12jkjfux-oiokpt5",
+        "name": "Potato Shots",
+        "image":"image/image/friesANdsides/potato shots.jpg",
+        "price":139
+    },
+    {
+        "id": "12jkjfjjk-oiokpt5",
+        "name": "Chicken Nuggets",
+        "image":"image/image/friesANdsides/Chicken nuggets.jpg",
+        "price":109
+    },
+    {
+        "id": "12ertffux-5kokpt5",
+        "name": "Loaded Nachos",
+        "image":"image/image/friesANdsides/loaded nachos.jpg",
+        "price":109
+    },
+    {
+        "id": "12ertffux-chjokpt5",
+        "name": "Jalepeno Dip",
+        "image":"image/image/friesANdsides/jalepeno dip.jpg",
+        "price":29
+    },
+    {
+        "id": "12ertffux-chskpt5",
+        "name": "Cheesy Dip",
+        "image":"image/image/friesANdsides/cheese dip.jpg",
+        "price":29
+    }
+
+    
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "ib8873b-d873gb8312",
+        "image": "../image/Burger and wraps/Veggie Burger.jpg",
+        "name": "Veggie Burger",
+        "price": 129
+    },
+    {
+        "id": "ib4473b-d873327312",
+        "image": "../image/Burger and wraps/Aloo Tikki Burger.jpg",
+        "name": "Aloo Tikki Burger",
+        "price": 79
+    },
+    {
+        "id": "ib3273b-dbfiw3gb8312",
+        "image": "../image/Burger and wraps/Chicken Burger.jpg",
+        "name": "Chichken Burger",
+        "price": 179
+    },
+    {
+        "id": "ib88-d873gb8312",
+        "image": "../image/Burger and wraps/chessy Paneer Burger.jpg",
+        "name": "Chessy Paneer Burger",
+        "price": 229
+    },
+    {
+        "image": "../image/Burger and wraps/Mexican Bunger.jpg",
+        "id": "ib8873b-d8738312",
+        "name": "Mexican Burger",
+        "price": 189
+    },
+    {
+        "image": "../image/Burger and wraps/veg wrap.jpg",
+        "id": "igeg73b-d873gb8312",
+        "name": "Veg Wrap",
+        "price": 199
+    },
+    {
+        "image": "../image/Burger and wraps/bbq chichken wrap.jpg",
+        "id": "ib8873b-d873as12",
+        "name": "BBQ Chichken Wrap",
+        "price": 239
+    },
+    {
+        "image": "../image/Burger and wraps/paneer wrap.jpg",
+        "id": "ib8873b-d853b8312",
+        "name": "Paneer Loaded Wrap",
+        "price": 249
+    },
+    {
+        "image": "../image/Burger and wraps/super bullger.jpg",
+        "id": "iss873b-d873nu8d312",
+        "name": "Crisp n' Twist Special Bull'ger",
+        "price": 339
+    }
+]

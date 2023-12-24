@@ -1,0 +1,43 @@
+[
+    {
+        "id": "12345kux-de5tl",
+        "name": "Veg Toast",
+        "image":"image/image/sandwich/Veggie Toast.jpg",
+        "price":79
+    },
+
+    {
+        "id": "12345kux-5ukoo2",
+        "name": "Grilled Cheese Sandwich",
+        "image":"image/image/sandwich/Grilled Cheese sandwich.jpg",
+        "price":89
+    },
+
+    {
+        "id": "12345kux-suel5t3",
+        "name": "Brunch Sandwich",
+        "image":"image/image/sandwich/brunch sandwich.webp",
+        "price":109
+    },
+    {
+        "id": "12345kux-ooit4",
+        "name": "Italian Hero Sub",
+        "image":"image/image/sandwich/Italian Hero Sub.jpg",
+        "price":149
+    },
+    {
+        "id": "123yuuu-5ull5t5",
+        "name": "Tandoorie Chicken Sub",
+        "image":"image/image/sandwich/Tandorie Chicken sub.jpg",
+        "price":179
+    },
+    {
+        "id": "1mkkkux-5ull5t6",
+        "name": "Grilled Chicken Sandwich",
+        "image":"image/image/sandwich/Grilled Chicken Sandwich.webp",
+        "price":109
+    }
+    
+
+    
+]

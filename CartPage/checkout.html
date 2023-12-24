@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader-wrapper">
+        
+        <div class="loader-section">
+            <video id="loader" autoplay loop muted>
+            <source src="../burger eye 4.mp4" type="video/mp4">
+            <!-- Your browser does not support the video tag. -->
+        </video></div>
+        <div class="linear-loader"></div>
+    </div>
+    <header>
+    
+        <div class="container">
+             <nav id="content">
+                 <div id="logo" onclick="goToHomePageFromCheckout()" ></div>
+                 <div class="offerButton">
+                     <div class="offerdropdown">
+                        <button class="dropbtn" onclick="toggleDropdown(1)">Dine-In
+                            <img class="dekstopSwitchIcon" src="../🦆 icon _nav arrow down_.svg" />
+                        </button>
+                     </div>
+                 </div>
+                 
+                       
+                 <div class="mobileTopButtons">
+                     <div class="merge">
+                         <div class="offer" tabindex="0" id="div1" onclick="changeImage('div1', 'food-delivery.png')">
+                                 <img class="mobileSwitchIcon" src="../food-delivery brown.png" />
+                                 <button class="dropbtn" onclick=""></button>
+                         </div>
+                         <div class="Dheading">Delivery</div>
+                     </div>
+                     <div class="merge">   
+                         <div class="offer" tabindex="0" id="div2" onclick="changeImage('div2', 'dine-in white.png')">
+                                 <img class="mobileSwitchIcon" src="../dine-in.png" />
+                                 <button class="dropbtn" onclick=""></button>
+                         </div>
+                         <div class="DIheading">Dine In</div>
+                     </div>
+                     <div class="merge">
+                         <div class="offer" tabindex="0" id="div3" onclick="changeImage('div3', 'on-the-go white.png')">
+                                 <img class="mobileSwitchIcon" src="../on-the-go.png" />
+                                 <button class="dropbtn" onclick="">    
+                                 </button>
+                         </div>
+                         <div class="OTGheading">On The Go</div>
+                     </div>
+                     <div class="merge">
+                         <div class="offer" tabindex="0" id="div4" onclick="changeImage('div4', 'take-away.png')">
+                                 <img class="mobileSwitchIcon" src="../take-away brown.png" />
+                                 <button class="dropbtn" onclick="">
+                                 </button>
+                         </div>
+                         <div class="TAheading">Take Away</div>
+                     </div>
+                 </div>
+         
+             </nav>
+             <div class="leftNavBarcontent">
+                <h4>|</h4>
+                <h4>Offers</h4>
+                <h4 onclick="goToDealsPage()">Deals</h4>
+                <h4>Settings</h4>
+                <img src="../search icon.png" alt="">
+             
+                <!-- <div class="user_id">
+                    <div class="clickable-image" onclick="openHTMLFile()">
+                        <img src="../profile.png" alt="Click to Open HTML File">
+                    </div>
+                </div> -->
+            </div>
+         </div>
+     </header>
+        
+     <div class="mobile-header">
+        <div class="back-to-home-page" onclick="goToMenuPage()">
+            <img src="../payment portal/left arrow.png" style="height: 24px;">
+        </div>
+        <div class="delivery-info">
+            <div class="delivery-to">
+                <h4>Delivering To</h4>
+                <img src="../🦆 icon _nav arrow down_black.svg" alt="">
+            </div>
+            <div class="delivery-address">
+                <h1>Home -</h1>
+                <h2>BhawarKuan, Indore, AB Roa...</h2>
+            </div>
+        </div>
+        <div class="totalTime">
+            <img src="../clock.svg" alt="">
+            <h3>Now</h3>
+        </div>
+     </div>
+     
+
+
+        <div class="orderTime">
+            <img src="../eatRider.gif">
+            <h3>Expect your order within<span class="green">19 mins</span>of ordering</h3>
+        </div>
+     
+        <div class="displayView">
+            <div class="itemList">
+                <div class="headings">
+                    <h5>Your Cart</h5>
+                    <h6 class="js-delete-link">Clear All</h6>
+                </div>
+                <div class="summaryDisplay js-order-summary">
+                    <!--<div class="itemsViewer ">
+                        <img src="../Veggie Burger.jpg">
+                        <div class="productInfo">
+                            <div class="item">Veggie Burger</div>
+                            <h4>₹129</h4>
+                        </div>
+                        <div class="quantityChangingButton">
+                            <div class="minus-button"><img src="../minus sign.svg"></div>
+                            <div class="quantitynumber">1</div>
+                            <div class="plus-button"><img src="../plus sign.svg" ></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="priceInfo">
+                <h3>Total Charges</h3>
+                <div class="priceCount">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="recommendations">
+            <h3>Recommendations</h3>
+            <div class="carousels-items">
+                <div class="container">
+                    <img class="flyer-image" src="../cheesy fries.webp">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Cheesy Fries</div> 
+                            <div class="menu-pricebar">₹149</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/friesANdsides/Chicken nuggets.jpg">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Chicken Nuggets</div> 
+                            <div class="menu-pricebar">₹109</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/friesANdsides/cheese dip.jpg">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Cheese Dip</div> 
+                            <div class="menu-pricebar">₹29</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/friesANdsides/jalepeno dip.jpg">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Jalepeno Dip</div> 
+                            <div class="menu-pricebar">₹29</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/friesANdsides/salted Fries.webp">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Salted Fries</div> 
+                            <div class="menu-pricebar">₹109</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/friesANdsides/garlic bread.webp">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Garlic Bread</div> 
+                            <div class="menu-pricebar">₹139</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/friesANdsides/loaded nachos.jpg">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Loaded Nachos</div> 
+                            <div class="menu-pricebar">₹109</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/Desserts/brownie.jpeg">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Brownie</div> 
+                            <div class="menu-pricebar">₹179</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="flyer-image" src="../image/Beverages/cola1.jpg">
+                    <div class="item">
+                        <div class="product-info-in-product-container">
+                            <div class="menu-title">Cola</div> 
+                            <div class="menu-pricebar">₹69</div>
+                            <div class="quantityButton">
+                                <div class="minus"><img class="minus-button" src="../minus sign.svg"></div>
+                                <div class="quantitynumber"></div>
+                                <div class="add-button">
+                                    <img class="add-button-img" src="../plus sign.svg">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-delivery-instructions">
+            <h3>Add Delivery Instructions</h3>
+            <img src="../brpwn plus.png">
+        </div>
+
+     <footer>
+        <div class="restaurantinfo">
+            <h4>Indore BhawarKuan</h4>
+            <p>Hardcastle Restaurants Pvt Ltd, Crips N Twist Family Restaurants Pvt Ltd, Orange Business...</p>
+        </div>
+        <div class="divider">|</div>
+        <button class="payButton" onclick="goToPay()">Pay</button>
+     </footer>
+     
+     
+     <script type="module" src="checkout.js"></script>
+     <script src="carousles.js"></script>
+     <script src="../homepage.js"></script>
+     
+</body>
+</html>

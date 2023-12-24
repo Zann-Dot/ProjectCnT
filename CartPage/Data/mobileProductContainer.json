@@ -1,0 +1,48 @@
+[
+    {
+        "id": "ib8873b-d873gb8312",
+        "image": "../image/Burger and wraps/Veggie Burger.jpg",
+        "name": "Veggie Burger",
+        "price": 129
+    },{
+        "id": "ib4473b-d873327312",
+        "image": "../image/Burger and wraps/Aloo Tikki Burger.jpg",
+        "name": "Aloo Tikki Burger",
+        "price": 79
+    },{
+        "image": "../image/Pizza/mushroom pizza.jpg",
+        "id": "ib8873b-d87lode312",
+        "name": "Mushroom Pizza",
+        "price": 119
+    },{
+        "id": "12345kux-kolpl5tl",
+        "name": "White Sauce Pasta",
+        "image":"/image/Pasta/white sauce pasta.webp",
+        "price":179
+    },{
+        "image": "../image/Pizza/margherita pizza.jpg",
+        "id": "ib847hnjf3b-d873gb8312",
+        "name": "Classic Margherita Pizza",
+        "price": 109
+    },{
+        "id": "12345kux-suel5t3",
+        "name": "Brunch Sandwich",
+        "image":"/image/sandwich/brunch sandwich.webp",
+        "price":109
+    },{
+        "id": "12345kux-vfrl5tl",
+        "name": "Chessy Fries",
+        "image":"/image/friesANdsides/cheesy fries.webp",
+        "price":149
+    },{
+        "id": "12kik5ff-asstl5t6",
+        "name": "Strawberry Smoothie",
+        "image":"/image/Beverages/strawberry shake.jpg",
+        "price":189
+    },{
+        "id": "12fgfkux-aaerft5t6",
+        "name": "Cola",
+        "image":"/image/Beverages/cola1.jpg",
+        "price":69
+    }
+]
