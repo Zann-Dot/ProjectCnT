@@ -235,9 +235,9 @@ function goToCheckoutPage() {
 function goToMenuPage() {
     window.location.href = 'MobileMenuPage.html';
 }
-// function goToMenuPage() {
-//     window.location.href = '../MobileMenuPage.html';
-// }
+function goToMenu() {
+    window.location.href = '../MobileMenuPage.html';
+}
 function goToSearchPage() {
     window.location.href = 'search.html';
 }
