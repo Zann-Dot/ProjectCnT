@@ -642,7 +642,7 @@ div .mySlides img{
     background-color: white;
 }
  .placards .box1 {
-    background-image: url('/image/Burger and wraps/Veggie Burger1.jpg');
+    background-image: url('image/Burger and wraps/Veggie Burger1.jpg');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position-x: 15px;
@@ -679,7 +679,7 @@ div .mySlides img{
     height: 12px;
 }
 .placards .box2 {
-    background-image: url('japanese\ menu.jpg');
+    background-image: url('image/Burger and wraps/Aloo\ Tikki\ Burger1.jpg');
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: center;
@@ -691,7 +691,7 @@ div .mySlides img{
 }
 
 .placards .box3 {
-    background-image: url('/image/Burger and wraps/Chicken\ Burger1.jpg');
+    background-image: url('image/Burger and wraps/Chicken\ Burger1.jpg');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -703,7 +703,7 @@ div .mySlides img{
 }
 
 .placards .box4 {
-    background-image: url('/image/Burger and wraps/chessy\ Paneer\ Burger1.jpg');
+    background-image: url('image/Burger and wraps/chessy\ Paneer\ Burger1.jpg');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -715,7 +715,7 @@ div .mySlides img{
 }
 
 .placards .box5 {
-    background-image: url('/image/Burger and wraps/Mexican\ Bunger1.jpg');
+    background-image: url('image/Burger and wraps/Mexican\ Bunger1.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -727,7 +727,7 @@ div .mySlides img{
 }
 
 .placards .box6 {
-    background-image: url('/image/Burger and wraps/veg wrap.jpg');
+    background-image: url('image/Burger and wraps/veg wrap.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -761,7 +761,7 @@ div .mySlides img{
     height: 12px;
 }
 .placards .box7 {
-    background-image: url('/image/Burger and wraps/bbq chichken\ wrap.jpg');
+    background-image: url('image/Burger and wraps/bbq chichken\ wrap.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -792,7 +792,7 @@ div .mySlides img{
     height: 12px;
 }
 .placards .box8 {
-    background-image: url('/image/Burger and wraps/paneer wrap.jpg');
+    background-image: url('image/Burger and wraps/paneer wrap.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -826,7 +826,7 @@ div .mySlides img{
     height: 12px;
 }
 .placards .box9 {
-    background-image: url('/image/Burger and wraps/super bullger.jpg');
+    background-image: url('image/Burger and wraps/super bullger.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -862,7 +862,7 @@ div .mySlides img{
 
 /* Pizza CSS */
 .placards .box10 {
-    background-image: url('/image/Pizza/mushroom pizza.jpg');
+    background-image: url('image/Pizza/mushroom pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -120px ;
@@ -873,7 +873,7 @@ div .mySlides img{
     
 }
 .placards .box11 {
-    background-image: url('/image/Pizza/paneer corn and capsicum pizza.webp');
+    background-image: url('image/Pizza/paneer corn and capsicum pizza.webp');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: -5px;
@@ -882,7 +882,7 @@ div .mySlides img{
     justify-content: end;
 }
 .placards .box12 {
-    background-image: url('/image/Pizza/veggie pizza.jpg');
+    background-image: url('image/Pizza/veggie pizza.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 0px;
@@ -891,7 +891,7 @@ div .mySlides img{
     justify-content: end;
 }
 .placards .box13 {
-    background-image: url('/image/Pizza/margherita pizza.jpg');
+    background-image: url('image/Pizza/margherita pizza.jpg');
     background-size: 120%;
     background-repeat: no-repeat;
     background-position-y: -2px;
@@ -900,7 +900,7 @@ div .mySlides img{
     justify-content: end;
 }
 .placards .box14 {
-    background-image: url('/image/Pizza/onion pepprikca pizza.jpg');
+    background-image: url('image/Pizza/onion pepprikca pizza.jpg');
     background-size: 110%;
     background-repeat: no-repeat;
     background-position-y: -3px;
@@ -909,7 +909,7 @@ div .mySlides img{
     justify-content: end;
 }
 .placards .box15 {
-    background-image: url('/image/Pasta/white\ sauce\ pasta.webp');
+    background-image: url('image/Pasta/white\ sauce\ pasta.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -40px;
@@ -918,7 +918,7 @@ div .mySlides img{
     justify-content: end;
 }
 .placards .box16 {
-    background-image: url('/image//Pasta/red-pepper-pasta.jpg');
+    background-image: url('image//Pasta/red-pepper-pasta.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -60px;
