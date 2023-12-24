@@ -1,7 +1,7 @@
 [
     {
         "id": "ib8873b-d873gb8312",
-        "image": "../image/Burger and wraps/Veggie Burger.jpg",
+        "image": "https://github.com/Zann-Dot/ProjectCnT/blob/main/image/Burger%20and%20wraps/Aloo%20Tikki%20Burger.jpg",
         "name": "Veggie Burger",
         "price": 129,
         "sign": "../veg sign.png"
