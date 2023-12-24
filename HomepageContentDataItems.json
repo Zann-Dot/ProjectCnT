@@ -4,352 +4,352 @@
         "image": "image/Burger and wraps/Veggie Burger.jpg",
         "name": "Veggie Burger",
         "price": 129,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "ib4473b-d873327312",
         "image": "image/Burger and wraps/Aloo Tikki Burger.jpg",
         "name": "Aloo Tikki Burger",
         "price": 79,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "ib3273b-dbfiw3gb8312",
         "image": "image/Burger and wraps/Chicken Burger.jpg",
         "name": "Chichken Burger",
         "price": 179,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
     {
         "id": "ib88-d873gb8312",
         "image": "image/Burger and wraps/chessy Paneer Burger.jpg",
         "name": "Chessy Paneer Burger",
         "price": 229,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Burger and wraps/Mexican Bunger.jpg",
+        "image": "image/Burger and wraps/Mexican Bunger.jpg",
         "id": "ib8873b-d8738312",
         "name": "Mexican Burger",
         "price": 189,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Burger and wraps/veg wrap.jpg",
+        "image": "image/Burger and wraps/veg wrap.jpg",
         "id": "igeg73b-d873gb8312",
         "name": "Veg Wrap",
         "price": 199,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Burger and wraps/bbq chichken wrap.jpg",
+        "image": "image/Burger and wraps/bbq chichken wrap.jpg",
         "id": "ib8873b-d873as12",
         "name": "BBQ Chichken Wrap",
         "price": 239,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
     {
-        "image": "../image/Burger and wraps/paneer wrap.jpg",
+        "image": "image/Burger and wraps/paneer wrap.jpg",
         "id": "ib8873b-d853b8312",
         "name": "Paneer Loaded Wrap",
         "price": 249,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Burger and wraps/super bullger.jpg",
+        "image": "image/Burger and wraps/super bullger.jpg",
         "id": "iss873b-d873nu8d312",
         "name": "Crisp n' Twist Special Bull'ger",
         "price": 339,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Pizza/mushroom pizza.jpg",
+        "image": "image/Pizza/mushroom pizza.jpg",
         "id": "ib8873b-d87lode312",
         "name": "Mushroom Pizza",
         "price": 119,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Pizza/paneer corn and capsicum pizza.webp",
+        "image": "image/Pizza/paneer corn and capsicum pizza.webp",
         "id": "ichut73b-d873gb8312",
         "name": "Paneer Corn & Capsicum Pizza",
         "price": 149,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Pizza/veggie pizza.jpg",
+        "image": "image/Pizza/veggie pizza.jpg",
         "id": "ib8bb3b-d8gandub8312",
         "name": "Veggie Cheesy Pizza",
         "price": 189,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
-        "image": "../image/Pizza/margherita pizza.jpg",
+        "image": "image/Pizza/margherita pizza.jpg",
         "id": "ib847hnjf3b-d873gb8312",
         "name": "Classic Margherita Pizza",
         "price": 109,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "123efi2ux-5ullklt4",
         "name": "Onion Pepprika Pizza",
-        "image":"../image/Pizza/onion pepprikca pizza.jpg",
+        "image":"image/Pizza/onion pepprikca pizza.jpg",
         "price":109,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-kolpl5tl",
         "name": "White Sauce Pasta",
-        "image":"/image/Pasta/white sauce pasta.webp",
+        "image":"image/Pasta/white sauce pasta.webp",
         "price":179,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-5ull5t2",
         "name": "Red Sauce Pasta",
-        "image":"/image/Pasta/red-pepper-pasta.jpg",
+        "image":"image/Pasta/red-pepper-pasta.jpg",
         "price":169,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-loit3",
         "name": "Mac N'Cheese",
-        "image":"/image/Pasta/Mac n Cheese.jpg",
+        "image":"image/Pasta/Mac n Cheese.jpg",
         "price":189,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-yhul5t4",
         "name": "Vegan Pasta",
-        "image":"/image/Pasta/Vegan Pasta.webp",
+        "image":"image/Pasta/Vegan Pasta.webp",
         "price":209,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-de5tl",
         "name": "Veg Toast",
-        "image":"/image/sandwich/Veggie Toast.jpg",
+        "image":"image/sandwich/Veggie Toast.jpg",
         "price":79,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
 
     {
         "id": "12345kux-5ukoo2",
         "name": "Grilled Cheese Sandwich",
-        "image":"/image/sandwich/Grilled Cheese sandwich.jpg",
+        "image":"image/sandwich/Grilled Cheese sandwich.jpg",
         "price":89,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
 
     {
         "id": "12345kux-suel5t3",
         "name": "Brunch Sandwich",
-        "image":"/image/sandwich/brunch sandwich.webp",
+        "image":"image/sandwich/brunch sandwich.webp",
         "price":109,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-ooit4",
         "name": "Italian Hero Sub",
-        "image":"/image/sandwich/Italian Hero Sub.jpg",
+        "image":"image/sandwich/Italian Hero Sub.jpg",
         "price":149,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "123yuuu-5ull5t5",
         "name": "Tandoorie Chicken Sub",
-        "image":"/image/sandwich/Tandorie Chicken sub.jpg",
+        "image":"image/sandwich/Tandorie Chicken sub.jpg",
         "price":179,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
     {
         "id": "1mkkkux-5ull5t6",
         "name": "Grilled Chicken Sandwich",
-        "image":"/image/sandwich/Grilled Chicken Sandwich.webp",
+        "image":"image/sandwich/Grilled Chicken Sandwich.webp",
         "price":109,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
     {
         "id": "12345kux-vfrl5tl",
         "name": "Chessy Fries",
-        "image":"/image/friesANdsides/cheesy fries.webp",
+        "image":"image/friesANdsides/cheesy fries.webp",
         "price":149,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "123bjkkx-5ull5t2",
         "name": "Peri Peri Fries",
-        "image":"/image/friesANdsides/peri peri fries.jpeg",
+        "image":"image/friesANdsides/peri peri fries.jpeg",
         "price":129,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
 
     {
         "id": "123bhjux-5kiol5t3",
         "name": "Salted Fries",
-        "image":"/image/friesANdsides/salted Fries.webp",
+        "image":"image/friesANdsides/salted Fries.webp",
         "price":109,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-5skkd5t4",
         "name": "Cheese Pull Apart Garlic Bread",
-        "image":"/image/friesANdsides/cheese pull apart garlic bread.jpg",
+        "image":"image/friesANdsides/cheese pull apart garlic bread.jpg",
         "price":209,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
      {
         "id": "123cffux-5ull5t5",
         "name": "Garlic Bread",
-        "image":"/image/friesANdsides/garlic bread.webp",
+        "image":"image/friesANdsides/garlic bread.webp",
         "price":139,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "123cffux-kjull5t5",
         "name": "Chickpea Guacamoli Taco",
-        "image":"/image/friesANdsides/Chickpee Guacaomoli Taco.webp",
+        "image":"image/friesANdsides/Chickpee Guacaomoli Taco.webp",
         "price":179,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12jkjfux-iuiokpt5",
         "name": "Chicken Taco",
-        "image":"/image/friesANdsides/chicken taco.jpg",
+        "image":"image/friesANdsides/chicken taco.jpg",
         "price":139,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
     {
         "id": "12jkjfux-oiokpt5",
         "name": "Potato Shots",
-        "image":"/image/friesANdsides/potato shots.jpg",
+        "image":"image/friesANdsides/potato shots.jpg",
         "price":139,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12jkjfjjk-oiokpt5",
         "name": "Chicken Nuggets",
-        "image":"/image/friesANdsides/Chicken nuggets.jpg",
+        "image":"image/friesANdsides/Chicken nuggets.jpg",
         "price":109,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
     {
         "id": "12ertffux-5kokpt5",
         "name": "Loaded Nachos",
-        "image":"/image/friesANdsides/loaded nachos.jpg",
+        "image":"image/friesANdsides/loaded nachos.jpg",
         "price":109,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12ertffux-chjokpt5",
         "name": "Jalepeno Dip",
-        "image":"/image/friesANdsides/jalepeno dip.jpg",
+        "image":"image/friesANdsides/jalepeno dip.jpg",
         "price":29,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12ertffux-chskpt5",
         "name": "Cheesy Dip",
-        "image":"/image/friesANdsides/cheese dip.jpg",
+        "image":"image/friesANdsides/cheese dip.jpg",
         "price":29,
-        "sign": "../veg sign.png"
+        "sign": "veg sign.png"
     },
     {
         "id": "12345kux-34l5tl",
         "name": "Cappuccino",
-        "image":"/image/Beverages/cappuccino.webp",
+        "image":"image/Beverages/cappuccino.webp",
         "price":149
     },
 
     {
         "id": "12errkux-5ull5t2",
         "name": " Hot Coffee",
-        "image":"/image/Beverages/hot coffee.webp",
+        "image":"image/Beverages/hot coffee.webp",
         "price":119
     },
 
     {
         "id": "12345kux-5tyyl5t3",
         "name": "Cold coffee",
-        "image":"/image/Beverages/cold coffee with ice cream.avif",
+        "image":"image/Beverages/cold coffee with ice cream.avif",
         "price":159
     },
     {
         "id": "12345nkx-5vgll5t4",
         "name": "Straberry Mojito",
-        "image":"/image/Beverages/strawberry mojito.webp",
+        "image":"image/Beverages/strawberry mojito.webp",
         "price":139
     },
     {
         "id": "1aw45kux-5ull5t5",
         "name": "Lime Mojito",
-        "image":"/image/Beverages/lime mojito.webp",
+        "image":"image/Beverages/lime mojito.webp",
         "price":139
     },
     {
         "id": "12345kux-5rtl5t6",
         "name": "Blueberry Mojito",
-        "image":"/image/Beverages/blueberry mojito.webp",
+        "image":"image/Beverages/blueberry mojito.webp",
         "price":139
     },
     {
         "id": "12ytykux-asstl5t6",
         "name": "Chocolate Smoothie",
-        "image":"/image/Beverages/chocolate smoothie.jpg",
+        "image":"image/Beverages/chocolate smoothie.jpg",
         "price":189
     },
     {
         "id": "12kik5kux-asstl5t6",
         "name": "Blueberry Smoothie",
-        "image":"/image/Beverages/blueberry smoothie.webp",
+        "image":"image/Beverages/blueberry smoothie.webp",
         "price":199
     },
     {
         "id": "12kik5ff-asstl5t6",
         "name": "Strawberry Smoothie",
-        "image":"/image/Beverages/strawberry shake.jpg",
+        "image":"image/Beverages/strawberry shake.jpg",
         "price":189
     },
     {
         "id": "12fgfkux-aaerft5t6",
         "name": "Cola",
-        "image":"/image/Beverages/cola1.jpg",
+        "image":"image/Beverages/cola1.jpg",
         "price":69
     },
    
     {
         "id": "12fgfkux-asstl5t6",
         "name": "fanta",
-        "image":"/image/Beverages/fanta.png",
+        "image":"image/Beverages/fanta.png",
         "price":69
     },
     {
         "id": "12fgfkux-atrt5t6",
         "name": "Sprite",
-        "image":"/image/Beverages/sprite3.jpg",
+        "image":"image/Beverages/sprite3.jpg",
         "price":69
     },
     {
         "id": "12678h-jjjjjk",
         "name": "Choco Lava",
-        "image":"/image/Desserts/choco lava.webp",
+        "image":"image/Desserts/choco lava.webp",
         "price":149,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
 
     {
         "id": "12345kux-5udd5t2",
         "name": "Brownie",
-        "image":"/image/Desserts/brownie.jpeg",
+        "image":"image/Desserts/brownie.jpeg",
         "price":179,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     },
 
     {
         "id": "12345kux-5errt3",
         "name": "Red Velvet Cheese Cake",
-        "image":"/image/Desserts/red velvet cheese cake.jpg",
+        "image":"image/Desserts/red velvet cheese cake.jpg",
         "price":189,
-        "sign": "../non veg sign.png"
+        "sign": "non veg sign.png"
     }
 ]
