@@ -20,6 +20,9 @@ document.querySelectorAll('.js-delete-link').forEach((link) => {
     });  
 });
 
+function goToMenu() {
+    window.location.href = '../MobileMenuPage.html';
+}
 
 
 
