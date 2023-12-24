@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <script>
+        // Function to extract query parameters from the URL
+        function getQueryParameter(parameterName) {
+            var queryString = window.location.search.substring(1);
+            var parameters = queryString.split('&');
+
+            for (var i = 0; i < parameters.length; i++) {
+                var pair = parameters[i].split('=');
+                if (pair[0] === parameterName) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+
+            return null;
+        }
+
+        // Function to load content based on the query parameter
+        function loadContent() {
+            var value = getQueryParameter('value');
+
+            if (value) {
+                document.getElementById('output').innerText = 'Value from Page 1: ' + value;
+            } else {
+                document.getElementById('output').innerText = 'No value received.';
+            }
+        }
+
+        // Call the loadContent function when the page loads
+        window.onload = loadContent;
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

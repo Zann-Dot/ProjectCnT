@@ -15,21 +15,71 @@
             backdrop-filter: brightness(30%);
             
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            /* justify-content: center; */
+            align-items: start;
             margin: 0;
             /* background: linear-gradient(
         90deg,#f8b69c,#c9be21);; */
+        font-family: speedee;
             
+         }
+         body::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+         }
+         .poppers-left {
+            position: relative;
+            z-index: -1;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+         }
+         .poppers-left img {
+            position: relative;
+            left: -40px;
+         }
+         .poppers-right {
+            position: relative;
+            z-index: -1;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+         }
+         .poppers-right img {
+            position: relative;
+            left: 70px;
+         }
+         .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+         .container .headings {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+         }
+         .headings h3 {
+            margin: 100px 0 20px 0;
+            font-size: 40px;
+         }
+         .headings h4 {
+            margin: 10px;
+            color: #fcbf49;
+         }
+         .headings h5{
+            margin: 5px;
+            font-size: 20px;
          }
         #barcode-container {
             text-align: center;
+            margin-top: 85px;
         }
 
         #barcode-image {
-            max-width: 10%;
-            max-height: 10%;
+            max-width: 20%;
+            max-height: 20%;
             filter: drop-shadow(0 0 18px rgba(82, 71, 41, 0.3));
         }
         button{
@@ -63,16 +113,34 @@
         }
          */
         @keyframes scale-up-center{
-            0% {transform:scale(.95)}
-            100% {transform:scale(1)}
+            0% {transform:scale(1)}
+            100% {transform:scale(1.1)}
         }
     </style>
 </head>
 <body>
-    
-    <div id="barcode-container">
-        <img class="scale-up-center" id="barcode-image" src="io86-r_qrcode.png" alt="Barcode" onclick="pay()">
-        
+    <div class="poppers-left">
+        <img src="/image/6SSp.gif" alt="">
+        <img src="/image/6SSp.gif" alt="">
+        <img src="/image/6SSp.gif" alt="">
+    </div>
+    <div class="container">
+        <div class="headings">
+            <h3>Congratulations!</h3>
+            <h4>Your Deal is Activated!</h4>
+            <h4>Scan the QR Code to Activate the deal on your phone</h4>
+            <h5>or</h5>
+            <h4>Click on the QR Code to start adding your meals from the portal</h4>
+        </div>
+        <div id="barcode-container">
+            <img class="scale-up-center" id="barcode-image" src="io86-r_qrcode.png" alt="Barcode" onclick="pay()">
+            
+        </div>
+    </div>
+    <div class="poppers-right">
+        <img src="/image/6SSp.gif" alt="">
+        <img src="/image/6SSp.gif" alt="">
+        <img src="/image/6SSp.gif" alt="">
     </div>
     <!-- <img id="fries" src="spreaded fries.png" alt=""> -->
 </body>

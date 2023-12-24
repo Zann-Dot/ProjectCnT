@@ -89,7 +89,7 @@ nav {
     width: 183px;
     height: 61px;
     border-radius: 10px;
-    background: #DD5252;
+    background: #ef233c;
     color: #FFF;
     text-align: center;
     font-family: Speedee, 'Fira Sans', 'Poppins', sans-serif;;
@@ -104,13 +104,14 @@ nav {
     
 }
 .offer button {
-    background-color: #DD5252;
+    background-color: #ef233c;
     color: white;
     border: none;
     font-family: Speedee, 'Fira Sans', 'Poppins', sans-serif;;
     font-size: 19px;
     margin: 0;
     padding-left: 15px;
+    cursor: pointer;
 }
 .offerDropdown {
     display: inline-block;
@@ -143,7 +144,7 @@ nav {
 .offerContent a:hover {
     background-color: #ffffff;
     border-radius: 18px;
-    color: rgb(255, 216, 158);
+    color: #ef233c;
 }
 
 .show {
@@ -227,7 +228,7 @@ nav {
 
 .regionContent a:hover {
     background-color: #f1f1f1;
-    color: #838383;
+    color: #464646;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 }
@@ -364,7 +365,7 @@ div .mySlides img{
     transition: 0.05s ease;
 }
 .menu_searchbar button:hover {
-    background: #be3232;
+    background: #ef233c;
     color: #e4e4e4;
     font-size: 13px;
     transform: scale(1.1);

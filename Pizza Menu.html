@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="home-pizza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- <div id="loader-wrapper">
+        
+        <div class="loader-section"><div id="loader"></div></div>
+    </div> -->
+    <div id="loader-wrapper">
+        
+        <div class="loader-section">
+            <video id="loader" autoplay loop muted>
+            <source src="burger eye 4.mp4" type="video/mp4">
+            <!-- Your browser does not support the video tag. -->
+        </video></div>
+        <div class="linear-loader"></div>
+    </div>
+    <header>
+    
+        <div class="container">
+             <nav id="content">
+                 <div id="logo" onclick="goToHomePage()"></div>
+                 <div class="offerButton">
+                     <div class="offerdropdown">
+                        <button class="dropbtn" onclick="toggleDropdown(1)">Dine-In
+                            <img class="dekstopSwitchIcon" src="🦆 icon _nav arrow down_.svg" />
+                            
+                        </button>
+                        <div class="dropdown-content offerContent" id="myDropdown1">
+                            <a href="#">Delivery</a>
+                            <a href="#" onclick="">On The Go</a>
+                            <a href="#">Take Away</a>
+                        </div>
+                     </div>
+                 </div>
+                 
+                       
+                 <div class="mobileTopButtons">
+                     <div class="merge">
+                         <div class="offer" tabindex="0" id="div1" onclick="changeImage('div1', 'food-delivery.png')">
+                                 <img class="mobileSwitchIcon" src="food-delivery brown.png" />
+                                 <button class="dropbtn" onclick=""></button>
+                         </div>
+                         <div class="Dheading">Delivery</div>
+                     </div>
+                     <div class="merge">   
+                         <div class="offer" tabindex="0" id="div2" onclick="changeImage('div2', 'dine-in white.png')">
+                                 <img class="mobileSwitchIcon" src="dine-in.png" />
+                                 <button class="dropbtn" onclick=""></button>
+                         </div>
+                         <div class="DIheading">Dine In</div>
+                     </div>
+                     <div class="merge">
+                         <div class="offer" tabindex="0" id="div3" onclick="changeImage('div3', 'on-the-go white.png')">
+                                 <img class="mobileSwitchIcon" src="on-the-go.png" />
+                                 <button class="dropbtn" onclick="">    
+                                 </button>
+                         </div>
+                         <div class="OTGheading">On The Go</div>
+                     </div>
+                     <div class="merge">
+                         <div class="offer" tabindex="0" id="div4" onclick="changeImage('div4', 'take-away.png')">
+                                 <img class="mobileSwitchIcon" src="take-away brown.png" />
+                                 <button class="dropbtn" onclick="">
+                                 </button>
+                         </div>
+                         <div class="TAheading">Take Away</div>
+                     </div>
+                 </div>
+         
+ 
+                 <div class="region_detector">
+                     <section>
+                         <img src="🦆 icon _globe_.svg" alt="">
+                         <!-- <div class="region">Enter Your Region</div> -->
+                         <!-- <div class="region_dropdown">
+                             <button class="btn" id="nameChangeOnSelection" onclick="toggleDropdown(2)">Enter Your Region
+                                 <img src="🦆 icon _nav arrow down_black.svg" />
+                             </button>
+                             <div class="dropdown-content" id="myDropdown2">
+                                 <a href="#" id="changeButton" onclick="buttonNameChange()">West South</a>
+                                 <a href="#" id="changeText" onclick="buttonChange()">North East</a>
+                             </div>
+                         </div> -->
+                         <div class="region_dropdown">
+                             <button class="btn" id="nameChangeOnSelection" onclick="toggleDropdown(2)">Enter Your Region
+                                 <img src="🦆 icon _nav arrow down_black.svg" />
+                             </button>
+                             <div class="dropdown-content regionContent" id="myDropdown2">
+                                 <a href="#" id="changeButton" onclick="buttonNameChange()">West South</a>
+                                 <a href="#" id="changeText" onclick="buttonChange()">North East</a>
+                                 
+                             </div>
+                         </div>
+                     </section>
+                     <!-- <div class="dropdown_region_icon"><img src="🦆 icon _nav arrow down_black.svg" alt=""></div> -->
+                     
+                     <p>Please enter your location we can search the ...</p>
+                     <div class="hideOnDekstopMode">
+                         <div class="toolbar-Location">
+                             <h4>Home</h4>
+                             <article>Government Holkar Science College, AB Road, BhawarKuan, Indore - 452001</article>
+                         </div>
+                         <div class="toolBar-divider"></div>
+                         <div class="nearByRestoandTiming" onclick="openAddressFile()">
+                             <h4>Select Restaurant Based on your Loaction</h4>
+ 
+                         </div>
+                     </div>
+                 </div>
+             </nav>
+             <div class="leftNavBarcontent">
+                <h4>|</h4>
+                <h4>Offers</h4>
+                <h4>Deals</h4>
+                <h4>Settings</h4>
+                <img src="search icon.png" alt="">
+             
+                <div class="user_id">
+                    <div class="clickable-image" onclick="openHTMLFile()">
+                        <img src="profile.png" alt="Click to Open HTML File">
+                    </div>
+                </div>
+            </div>
+         </div>
+     </header>
+ 
+ 
+     <div class="position">
+         <div class="slideshow-container">
+             <div class="mySlides fade"> 
+                 <img src="banner 2.jpg" /></div>
+             <img class="mobileBanner" src="banner3.jpg" />
+             <div class="blackStrip_menuDivider"></div>
+             
+         </div>
+ 
+ 
+         <div class="menu_searchbar" id="iqgwidg66231t292">
+             <h3>Our Menu</h3>
+             <button class="deals" id="loadButton" onclick=""><img src="🦆 icon _trending up_.svg" >Deals</button>
+             <button class="popular" id="loadButton" onclick=""><img src="popular icon.png" >Popular</button>
+             <button class="newLaunch" id="loadButton" onclick=""><img src="new-launch.svg" >New Launch</button>
+
+             <input class="search-bar" type="search" placeholder="Search Here">
+             <img src="selected searchTab.png" class="searchIcon">
+             
+ 
+         </div>
+         
+         <div class="deals_and_placards">
+             <div class="deals">
+                 <div class="burgerMenu" onclick="moreOpen1()"><h3>Burgers and Wraps</h3></div>
+                 <div class="pizzaMenu" onclick="moreOpen2()"><h3>Pizza</h3><div class="selectedBar"></div></div>
+                 <div class="pastaMenu"onclick="moreOpen3()"><h3>Pasta</h3></div>
+                 <div class="sandwichMenu"onclick="moreOpen4()"><h3>Sandwiches</h3></div>
+                 <div class="friesAndSidesMenu"onclick="moreOpen5()"><h3>Fries & Sides</h3></div>
+                 <div class="japaneseMenu"onclick="moreOpen6()"><h3>Japanese</h3></div>
+                 <div class="mealForOneMenu"onclick="moreOpen7()"><h3>Meals For One</h3></div>
+                 <div class="coffeeAndBeverages"onclick="moreOpen8()"><h3>Coffee & Beverages (Hot & Cold)</h3></div>
+                 <div class="Desserts"onclick="moreOpen9()"><h3>Desserts</h3></div>
+             </div>
+
+
+            <div class="placardsAndViewCart">
+                <div class="contentArea">
+                    <h4>Pizza</h4>
+                    <div class="placards js-placards">
+                        <!-- <div class="box1" onclick="">
+                            <section>
+                                <h3>Mushroom Pizza</h3>
+                                <img src="rating-star.png" />4.2
+                                <h2>₹119</h2>
+                                <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
+                            </section>
+                        </div>
+                        <div class="box2" onclick="">
+                            <section>
+                                <h3>Paneer Corn & Capsicum Pizza</h3>
+                                <img src="rating-star.png" />4.2
+                                <h2>₹149</h2>
+                                <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
+                            </section>
+                        </div>   
+                        <div class="box3" onclick="">
+                            <section>
+                                <h3>Veggie Cheesy Pizza</h3>
+                                <img src="rating-star.png" />4.2
+                                <h2>₹189</h2>
+                                <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
+                            </section>
+                        </div>
+                        <div class="box4" onclick="">
+                            <section>
+                                <h3>Classic Margherita Pizza</h3>
+                                <img src="rating-star.png" />4.2
+                                <h2>₹109</h2>
+                                <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
+                            </section>
+                        </div>
+                        <div class="box5">
+                            <section>
+                                <h3>Onion Pepprika Pizza</h3>
+                                <img src="rating-star.png" />4.2
+                                <h2>₹109</h2>
+                                <div class="addToCartButton" onclick="">Add <img src="🦆 icon _plus_.png" ></div>
+                            </section>
+                        </div> -->
+                        <!-- <div class="box6"onclick="">
+                            <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
+                        </div>
+                        <div class="box7">
+                            <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
+                        </div>
+                        <div class="box8" onclick="">
+                            <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
+                        </div>
+                        <div class="box9">
+                            <div class="addToCartButton">Add <img src="🦆 icon _plus_.png" ></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="divider-ToMyCart"></div>
+                <div class="myCartArea">
+                    <div class="headings">
+                        <h5>Your Cart</h5>
+                        <h6 class="js-delete-link">Clear All</h6>
+                    </div>
+                    <div class="cartView">
+                        <div class="js-cart-remove">
+                            <video autoplay loop muted>
+                                <source src="burger eye 4.mp4" type="video/mp4">
+                            </video>
+                            <h3>Oops!</h3>
+                            <h4>It Looks Like There is Something Missing!</h4>
+                        </div>
+                        <div class="js-item-placings">
+                            
+                        </div>
+
+                    </div>
+                    <div class="viewCartButton">
+                        <img src="cart icon.png" >
+                        <div class="subTotal-category"> 
+                            
+                        </div>  
+                        <button onclick="goToCheckoutPage()">View Cart</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+     
+     <div class="flyersslideshow">
+         
+     </div>
+     <div class="navbar">
+         <div class="homepage">
+             <img src="home.png" alt="">
+             <section>Home</section>
+         </div>
+         <div class="menu">
+             <img src="menu.png" alt="">
+             <section>Menu</section>
+         </div>
+         <div class="search">
+             <img src="searchTab.png" alt="">
+             <section>Search</section>
+         </div>
+         <div class="account">
+             <img src="account.png" alt="">
+             <section>My Account</section>
+         </div>
+     </div>
+     
+     <footer></footer>
+
+    <script type="module" src="CartPage/Backend/pizzacontaindata.js"></script>
+    <script src="homepage.js">
+
+</script>
+</body>
+</html>

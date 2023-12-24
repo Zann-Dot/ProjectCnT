@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <script>
+        function goToPage2() {
+            // Get the input value
+            var inputValue = document.getElementById('inputValue').value;
+
+            // Encode the input value and append it as a query parameter to the URL
+            var encodedValue = encodeURIComponent(inputValue);
+            window.location.href = 'viewCartPage.html?value=' + encodedValue;
+        }
+    </script>
+</head>
+<body>
+    <div class="viewCart"></div>
+    <label for="inputValue">Enter a value:</label>
+    <input type="text" id="inputValue">
+    <button onclick="goToPage2()">Go to Page 2</button>
+</body>
+</html>

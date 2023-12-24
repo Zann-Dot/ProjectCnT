@@ -7,11 +7,11 @@ body {
 
 video {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 37%;
+    left: 37%;
 
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
     object-fit: cover;
     z-index: -1;
     
